@@ -1,42 +1,43 @@
-# Scoop Bucket Template
+<div align="center">
+    <h1 align="center">Rojem-Scoop</h1>
+    <p align="center">
+        Rojem-Scoop 个人使用软件的下载、安装和自动更新的Scoop软件仓库。
+</div>
 
-<!-- Uncomment the following line after replacing placeholders -->
-<!-- [![Tests](https://github.com/<username>/<bucketname>/actions/workflows/ci.yml/badge.svg)](https://github.com/<username>/<bucketname>/actions/workflows/ci.yml) [![Excavator](https://github.com/<username>/<bucketname>/actions/workflows/excavator.yml/badge.svg)](https://github.com/<username>/<bucketname>/actions/workflows/excavator.yml) -->
 
-Template bucket for [Scoop](https://scoop.sh), the Windows command-line installer.
 
-## How do I use this template?
+## 订阅Bucket
 
-1. Generate your own copy of this repository with the "Use this template"
-   button.
-2. Allow all GitHub Actions:
-   - Navigate to `Settings` - `Actions` - `General` - `Actions permissions`.
-   - Select `Allow all actions and reusable workflows`.
-   - Then `Save`.
-3. Allow writing to the repository from within GitHub Actions:
-   - Navigate to `Settings` - `Actions` - `General` - `Workflow permissions`.
-   - Select `Read and write permissions`.
-   - Then `Save`.
-4. Document the bucket in `README.md`.
-5. Replace the placeholder repository string in `bin/auto-pr.ps1`.
-6. Create new manifests by copying `bucket/app-name.json.template` to
-   `bucket/<app-name>.json`.
-7. Commit and push changes.
-8. If you'd like your bucket to be indexed on `https://scoop.sh`, add the
-   topic `scoop-bucket` to your repository.
-
-## How do I install these manifests?
-
-After manifests have been committed and pushed, run the following:
+确保你已经有 Scoop 环境，执行以下命令订阅本软件仓库:
 
 ```pwsh
-scoop bucket add <bucketname> https://github.com/<username>/<bucketname>
-scoop install <bucketname>/<manifestname>
+scoop bucket add Rojem https://github.com/Jastmaskerrr/Rojem-Scoop
 ```
 
-## How do I contribute new manifests?
+执行以下命令安装本仓库中的软件:
 
-To make a new manifest contribution, please read the [Contributing
-Guide](https://github.com/ScoopInstaller/.github/blob/main/.github/CONTRIBUTING.md)
-and [App Manifests](https://github.com/ScoopInstaller/Scoop/wiki/App-Manifests)
-wiki page.
+```
+scoop install Rojem/stelliberty
+```
+
+
+
+## 应用列表
+
+| Manifest                                                     | Description                                                  |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| [Stelliberty](https://github.com/Kindness-Kismet/Stellibert) | 一个使用 Flutter 和 Rust 构建的现代化客户端，由 Mihomo 提供支持 |
+| [echotrace](https://github.com/ycccccccy/echotrace)          | EchoTrace 是一个本地、安全的微信聊天记录导出、分析与年度报告生成工具 |
+| [wx_key](https://github.com/ycccccccy/wx_key/)               | 获取微信4.0版本以上数据库密钥和图片密钥的工具                |
+
+
+
+## 疑问
+
+**1. 我想要某个软件，这个仓库里没有！**
+
+开 [issue](https://github.com/tldro/scoop-security/issues?q=sort%3Aupdated-desc+is%3Aissue+is%3Aopen)，描述你的需求。
+
+**2. 仓库中的某个软件版本落后了，求更新！**
+
+欢迎 Fork 本仓库，修改落后的软件清单，并提交你的拉取请求。

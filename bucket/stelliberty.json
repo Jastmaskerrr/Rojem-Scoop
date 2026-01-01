@@ -1,0 +1,35 @@
+{
+    "version": "1.1.152",
+    "description": "A modern client built with Flutter and Rust, powered by Mihomo (Clash Meta).",
+    "homepage": "https://github.com/Kindness-Kismet/Stelliberty",
+    "license": "Stelliberty License",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/Kindness-Kismet/Stelliberty/releases/download/v1.1.152/Stelliberty-v1.1.152-windows-x64.zip",
+            "hash": "f56cec011b2da6afa6a1417166357f2ae62aea033e1a6846f3b8da19d238b74b"
+        },
+        "arm64": {
+            "url": "https://github.com/Kindness-Kismet/Stelliberty/releases/download/v1.1.152/Stelliberty-v1.1.152-windows-arm64.zip",
+            "hash": "bcb21f175622fe8db6b6728eeaf98033f56c03357b13b263e4298da19ec4e96c"
+        }
+    },
+    "bin": "stelliberty.exe",
+    "shortcuts": [
+        [
+            "stelliberty.exe",
+            "Stelliberty"
+        ]
+    ],
+    "persist": "data",
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/Kindness-Kismet/Stelliberty/releases/download/v$version/Stelliberty-v$version-windows-x64.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/Kindness-Kismet/Stelliberty/releases/download/v$version/Stelliberty-v$version-windows-arm64.zip"
+            }
+        }
+    }
+}
