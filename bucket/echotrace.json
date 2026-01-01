@@ -6,7 +6,7 @@
     "notes": "Matching decryption WeChat database tool: https://github.com/ycccccccy/wx_key/",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/ycccccccy/echotrace/releases/download/v2.4.3/echotrace-windows-v2.4.6.zip",
+            "url": "https://github.com/ycccccccy/echotrace/releases/download/v2.4.6/echotrace-windows-v2.4.6.zip",
             "hash": "sha256:4bc6c744f9c652dc9f57a33f3809adc21c21e91e397a8c36ad9039075410cfb4"
         }
     },
