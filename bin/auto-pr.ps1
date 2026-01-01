@@ -1,6 +1,6 @@
 param(
     # overwrite upstream param
-    [String]$upstream = "Jastmaskerrr/Rojem-Scoop:main"
+    [String]$upstream = "Jastmaskerrr/Rojem-Scoop:master"
 )
 
 if (!$env:SCOOP_HOME) { $env:SCOOP_HOME = Convert-Path (scoop prefix scoop) }
