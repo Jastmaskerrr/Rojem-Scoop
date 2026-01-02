@@ -18,13 +18,14 @@
         ]
     ],
     "checkver": {
-        "github": "https://github.com/AutoHotkey/Ahk2Exe",
-        "regex": "Ahk2Exe([\\d.]+\\w*)"
+        "url": "https://api.github.com/repos/AutoHotkey/Ahk2Exe/releases",
+        "jsonpath": "$[0].assets[0].browser_download_url",
+        "regex": "download/(?<tag>[^/]+)/(?<filename>Ahk2Exe(?<version>[\\d.]+\\w*)\\.zip)"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/AutoHotkey/Ahk2Exe/releases/download/Ahk2Exe$version/Ahk2Exe$version.zip"
+                "url": "https://github.com/AutoHotkey/Ahk2Exe/releases/download/$matchTag/$matchFilename"
             }
         }
     }
