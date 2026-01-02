@@ -12,11 +12,11 @@
             "hash": "214b4fb44b265c49c6b1d361d41db2070a561403229e5a72d1a2c333f84ab1ed"
         },
         "32bit": {
-            "url": "https://github.com/mcmilk/7-Zip-zstd/releases/download/v25.01-v1.5.7-R2/Codecs-x86.7z", 
+            "url": "https://github.com/mcmilk/7-Zip-zstd/releases/download/v25.01-v1.5.7-R2/Codecs-x86.7z",
             "hash": "214b4fb44b265c49c6b1d361d41db2070a561403229e5a72d1a2c333f84ab1ed"
         },
         "arm64": {
-            "url": "https://github.com/mcmilk/7-Zip-zstd/releases/download/v25.01-v1.5.7-R2/Codecs-arm64.7z", 
+            "url": "https://github.com/mcmilk/7-Zip-zstd/releases/download/v25.01-v1.5.7-R2/Codecs-arm64.7z",
             "hash": "214b4fb44b265c49c6b1d361d41db2070a561403229e5a72d1a2c333f84ab1ed"
         }
     },
