@@ -1,5 +1,5 @@
 {
-    "version": "25.01-v1.5.7-R2",
+    "version": "v25.01-v1.5.7-R3",
     "description": "Replace Total Commander's tc7z.dll, supporting 7-Zip's Zstandard (Zstd, Brotli, Lz4, Lz5, Lizard) formats.",
     "homepage": "https://github.com/mcmilk/7-Zip-zstd",
     "license": "LGPL-2.1-or-later",
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/mcmilk/7-Zip-zstd/releases/download/v25.01-v1.5.7-R2/TotalCmd.7z",
-            "hash": "214b4fb44b265c49c6b1d361d41db2070a561403229e5a72d1a2c333f84ab1ed",
+            "url": "https://github.com/mcmilk/7-Zip-zstd/releases/download/v25.01-v1.5.7-R3/TotalCmd.7z",
+            "hash": "6bf4a3cd8c1bb219d3e0c8f9b4a0ae51a954117e8c4de938dfc50433da77a413",
             "installer": {
                 "script": [
                     "$TCDir = $(appdir totalcommander $global)",
@@ -22,8 +22,8 @@
             }
         },
         "32bit": {
-            "url": "https://github.com/mcmilk/7-Zip-zstd/releases/download/v25.01-v1.5.7-R2/TotalCmd.7z",
-            "hash": "214b4fb44b265c49c6b1d361d41db2070a561403229e5a72d1a2c333f84ab1ed",
+            "url": "https://github.com/mcmilk/7-Zip-zstd/releases/download/v25.01-v1.5.7-R3/TotalCmd.7z",
+            "hash": "6bf4a3cd8c1bb219d3e0c8f9b4a0ae51a954117e8c4de938dfc50433da77a413",
             "installer": {
                 "script": [
                     "$TCDir = $(appdir totalcommander $global)",
@@ -36,8 +36,8 @@
             }
         },
         "arm64": {
-            "url": "https://github.com/mcmilk/7-Zip-zstd/releases/download/v25.01-v1.5.7-R2/TotalCmd.7z",
-            "hash": "214b4fb44b265c49c6b1d361d41db2070a561403229e5a72d1a2c333f84ab1ed",
+            "url": "https://github.com/mcmilk/7-Zip-zstd/releases/download/v25.01-v1.5.7-R3/TotalCmd.7z",
+            "hash": "6bf4a3cd8c1bb219d3e0c8f9b4a0ae51a954117e8c4de938dfc50433da77a413",
             "installer": {
                 "script": [
                     "$TCDir = $(appdir totalcommander $global)",
