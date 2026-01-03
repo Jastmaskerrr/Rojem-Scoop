@@ -1,5 +1,5 @@
 {
-    "version": "2.9.0",
+    "version": "2.9.1",
     "description": "Remote GUI for transmission-daemon",
     "homepage": "https://github.com/equeim/tremotesf2",
     "license": "LGPL-2.1-or-later",
