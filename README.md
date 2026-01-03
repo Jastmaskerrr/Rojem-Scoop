@@ -34,12 +34,16 @@ scoop install rojem/stelliberty
 
 | APP                                                          | Manifest               | Description                                                  | Persist |
 | ------------------------------------------------------------ | ---------------------- | ------------------------------------------------------------ | ------- |
+| [7-zip-zstd Codecs](https://github.com/mcmilk/7-Zip-zstd)    | 7zip-zstd-codecs       | 为`main` 7-Zip 添加附加编解码器，包括`Zstandard`、`Brotli`、`Lz4`、`Lz5`和`Lizard` | 🈚️       |
+| [7-Zip-zstd TotalCmd](https://github.com/mcmilk/7-Zip-zstd)  | 7zip-zstd-totalcmd     | 替换Total Commander的`tc7z.dll` ，支持7-Zip的Zstandard（`Zstd`、`Brotli`、`Lz4`、`Lz5`、`Lizard`）格式。 | 🈚️       |
+| [Ahk2Exe](https://github.com/AutoHotkey/Ahk2Exe/releases)    | ahk2exe                | 官方的 AutoHotkey 脚本编译器                                 | 🈚️       |
+| [Apollo Profile Manager](https://github.com/ClassicOldSong/ApolloProfileManager) | apollo-profile-manager | 管理和自动交换 [Apollo ](https://github.com/ClassicOldSong/Apollo)不同客户端之间的游戏配置文件、存档文件、模组集和其他用户数据的工具 | ✔       |
 | [AutoHotkey_H](https://github.com/thqby/AutoHotkey_H)        | autohotkey_h           | 一个具有多线程等附加功能的AutoHotkey2分支。                  | 🈚️       |
 | [AutoHotkey v1](https://www.autohotkey.com)                  | autohotkey1            | AHK v1版，与`main`中的AHK共存                                | 🈚️       |
-| [Apollo Profile Manager](https://github.com/ClassicOldSong/ApolloProfileManager) | apollo-profile-manager | 管理和自动交换 [Apollo ](https://github.com/ClassicOldSong/Apollo)不同客户端之间的游戏配置文件、存档文件、模组集和其他用户数据的工具 | ✔       |
 | [echotrace](https://github.com/ycccccccy/echotrace)          | echotrace              | EchoTrace 是一个本地、安全的微信聊天记录导出、分析与年度报告生成工具 | ✔       |
 | [Open Internet Explorer](https://github.com/AigioL/OpenInternetExplorer) | open-Internet-explorer | 在 Windows 11 中打开 Internet Explorer                       | 🈚️       |
 | [Stelliberty](https://github.com/Kindness-Kismet/Stellibert) | stelliberty            | 一个使用 Flutter 和 Rust 构建的现代化客户端，由 Mihomo 提供支持 | ✔       |
+| [Tremotesf 2](https://github.com/equeim/tremotesf2)          | tremotesf2             | transmission的GUI                                            | ❌       |
 | [wx_key](https://github.com/ycccccccy/wx_key/)               | wx_key                 | 获取微信4.0版本以上数据库密钥和图片密钥的工具                | ✔       |
 
 
