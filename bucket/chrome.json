@@ -1,5 +1,5 @@
 {
-    "version": "141.0.7499.193",
+    "version": "140.0.7499.193",
     "description": "Automatically fetch Google Chrome offline installer using GitHub Actions",
     "homepage": "https://github.com/Bush2021/chrome_installer",
     "license": "MIT",
