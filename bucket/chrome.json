@@ -1,0 +1,63 @@
+{
+    "version": "141.0.7499.193",
+    "description": "Automatically fetch Google Chrome offline installer using GitHub Actions",
+    "homepage": "https://github.com/Bush2021/chrome_installer",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/Bush2021/chrome_installer/releases/download/143.0.7499.193/x64_143.0.7499.193_chrome_installer_uncompressed.exe#/dl.7z",
+            "hash": "sha256:7489fe46b131c26ec7b69c39bc8794e83b5473b89d73c9061d684008cb95a951"
+        },
+        "32bit": {
+            "url": "https://github.com/Bush2021/chrome_installer/releases/download/143.0.7499.193/x86_143.0.7499.193_chrome_installer_uncompressed.exe#/dl.7z",
+            "hash": "sha256:7489fe46b131c26ec7b69c39bc8794e83b5473b89d73c9061d684008cb95a951"
+        },
+        "arm64": {
+            "url": "https://github.com/Bush2021/chrome_installer/releases/download/143.0.7499.193/arm64_143.0.7499.193_chrome_installer_uncompressed.exe#/dl.7z",
+            "hash": "sha256:7489fe46b131c26ec7b69c39bc8794e83b5473b89d73c9061d684008cb95a951"
+        }
+    },
+    "installer": {
+        "script": [
+            "$cp_root = $(appdir chrome-plus $global)",
+            "if (Test-Path \"$cp_root\\current\") {",
+            "    $dest_app = \"$cp_root\\current\\App\"",
+            "    if (-not (Test-Path \"$dest_app\")) {",
+            "        New-Item \"$dest_app\" -ItemType Directory -Force | Out-Null",
+            "    }",
+            "    Write-Host \"Merging Chrome binaries into chrome-plus...\" -ForegroundColor Cyan",
+            "    Move-Item \"$dir\\Chrome-bin\\*\" \"$dest_app\" -Force",
+            "    ",
+            "    Write-Host \"Linking local executable to target...\" -ForegroundColor Cyan",
+            "    if (Test-Path \"$dir\\chrome.exe\") { Remove-Item \"$dir\\chrome.exe\" -Force }",
+            "    New-Item -ItemType SymbolicLink -Path \"$dir\\chrome.exe\" -Target \"$dest_app\\chrome.exe\" -Force | Out-Null",
+            "} else {",
+            "    Write-Warning \"chrome-plus installation not found. Binaries extracted to $dir but not moved.\"",
+            "}"
+        ]
+    },
+    "bin": "chrome.exe",
+    "shortcuts": [
+        [
+            "chrome.exe",
+            "Google Chrome"
+        ]
+    ],
+    "env_set": {
+        "CHROME_EXECUTABLE": "$dir\\chrome.exe"
+    },
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/Bush2021/chrome_installer/releases/download/$version/x64_$version_chrome_installer_uncompressed.exe#/dl.7z"
+            },
+            "32bit": {
+                "url": "https://github.com/Bush2021/chrome_installer/releases/download/$version/x86_$version_chrome_installer_uncompressed.exe#/dl.7z"
+            },
+            "arm64": {
+                "url": "https://github.com/Bush2021/chrome_installer/releases/download/$version/arm64_$version_chrome_installer_uncompressed.exe#/dl.7z"
+            }
+        }
+    }
+}

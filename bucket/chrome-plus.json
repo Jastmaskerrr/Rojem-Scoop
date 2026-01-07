@@ -1,0 +1,47 @@
+{
+    "version": "1.14.0",
+    "description": "A DLL hijack implements Chrome full portability as well as tab enhancements.",
+    "homepage": "https://github.com/Bush2021/chrome_plus",
+    "license": "GPL-3.0-only",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/Bush2021/chrome_plus/releases/download/1.14.0/Chrome++_v1.14.0_x86_x64_arm64.7z",
+            "hash": "sha256:721c5ccd14de2449cf03dfab1001d26d3a394c30f28a413a6301e17e77cff090",
+            "installer": {
+                "script": [
+                    "Move-Item \"$dir\\x64\\*\" \"$dir\" -Force",
+                    "Remove-Item \"$dir\\x64\", \"$dir\\x86\", \"$dir\\arm64\" -Recurse -Force"
+                ]
+            }
+        },
+        "32bit": {
+            "url": "https://github.com/Bush2021/chrome_plus/releases/download/v1.14.0/Chrome++_v1.14.0_x86_x64_arm64.7z",
+            "hash": "sha256:721c5ccd14de2449cf03dfab1001d26d3a394c30f28a413a6301e17e77cff090",
+            "installer": {
+                "script": [
+                    "Move-Item \"$dir\\x86\\*\" \"$dir\" -Force",
+                    "Remove-Item \"$dir\\x64\", \"$dir\\x86\", \"$dir\\arm64\" -Recurse -Force"
+                ]
+            }
+        },
+        "arm64": {
+            "url": "https://github.com/Bush2021/chrome_plus/releases/download/v1.14.0/Chrome++_v1.14.0_x86_x64_arm64.7z",
+            "hash": "sha256:721c5ccd14de2449cf03dfab1001d26d3a394c30f28a413a6301e17e77cff090",
+            "installer": {
+                "script": [
+                    "Move-Item \"$dir\\arm64\\*\" \"$dir\" -Force",
+                    "Remove-Item \"$dir\\x64\", \"$dir\\x86\", \"$dir\\arm64\" -Recurse -Force"
+                ]
+            }
+        }
+    },
+    "persist": [
+        "App",
+        "Cache",
+        "Data"
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/Bush2021/chrome_plus/releases/download/$version/Chrome++_v$version_x86_x64_arm64.7z"
+    }
+}
