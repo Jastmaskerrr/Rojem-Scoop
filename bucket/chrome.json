@@ -1,5 +1,5 @@
 {
-    "version": "143.0.7499.193",
+    "version": "141.0.7499.193",
     "description": "Automatically fetch Google Chrome offline installer using GitHub Actions",
     "homepage": "https://github.com/Bush2021/chrome_installer",
     "license": "MIT",
@@ -25,14 +25,18 @@
             "    if (-not (Test-Path \"$dest_app\")) {",
             "        New-Item \"$dest_app\" -ItemType Directory -Force | Out-Null",
             "    }",
-            "    Write-Host \"Merging Chrome binaries into chrome-plus...\" -ForegroundColor Cyan",
+            "    ",
+            "    Write-Host \"Cleaning up old Chrome versions...\" -ForegroundColor Yellow",
+            "    Get-ChildItem -Path \"$dest_app\" -Directory | Where-Object { $_.Name -match '^\\d+\\.\\d+\\.\\d+\\.\\d+$' } | Remove-Item -Recurse -Force",
+            "    ",
+            "    Write-Host \"Merging new Chrome binaries...\" -ForegroundColor Cyan",
             "    Move-Item \"$dir\\Chrome-bin\\*\" \"$dest_app\" -Force",
             "    ",
             "    Write-Host \"Linking local executable to target...\" -ForegroundColor Cyan",
             "    if (Test-Path \"$dir\\chrome.exe\") { Remove-Item \"$dir\\chrome.exe\" -Force }",
             "    New-Item -ItemType SymbolicLink -Path \"$dir\\chrome.exe\" -Target \"$dest_app\\chrome.exe\" -Force | Out-Null",
             "} else {",
-            "    Write-Warning \"chrome-plus installation not found. Binaries extracted to $dir but not moved.\"",
+            "    Write-Warning \"chrome-plus installation not found. Binaries extracted but not moved.\"",
             "}"
         ]
     },

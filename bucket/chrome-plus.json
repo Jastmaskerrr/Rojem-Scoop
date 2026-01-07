@@ -1,5 +1,5 @@
 {
-    "version": "1.14.0",
+    "version": "1.10.0",
     "description": "A DLL hijack implements Chrome full portability as well as tab enhancements.",
     "homepage": "https://github.com/Bush2021/chrome_plus",
     "license": "GPL-3.0-only",
@@ -9,8 +9,8 @@
             "hash": "721c5ccd14de2449cf03dfab1001d26d3a394c30f28a413a6301e17e77cff090",
             "installer": {
                 "script": [
-                    "Move-Item \"$dir\\x64\\*\" \"$dir\" -Force",
-                    "Remove-Item \"$dir\\x64\", \"$dir\\x86\", \"$dir\\arm64\" -Recurse -Force"
+                    "Remove-Item \"$dir\\x86\", \"$dir\\arm64\" -Recurse -Force",
+                    "Rename-Item \"$dir\\x64\" \"$dir\\_temp\""
                 ]
             }
         },
@@ -19,8 +19,8 @@
             "hash": "721c5ccd14de2449cf03dfab1001d26d3a394c30f28a413a6301e17e77cff090",
             "installer": {
                 "script": [
-                    "Move-Item \"$dir\\x86\\*\" \"$dir\" -Force",
-                    "Remove-Item \"$dir\\x64\", \"$dir\\x86\", \"$dir\\arm64\" -Recurse -Force"
+                    "Remove-Item \"$dir\\x64\", \"$dir\\arm64\" -Recurse -Force",
+                    "Rename-Item \"$dir\\x86\" \"$dir\\_temp\""
                 ]
             }
         },
@@ -29,8 +29,8 @@
             "hash": "721c5ccd14de2449cf03dfab1001d26d3a394c30f28a413a6301e17e77cff090",
             "installer": {
                 "script": [
-                    "Move-Item \"$dir\\arm64\\*\" \"$dir\" -Force",
-                    "Remove-Item \"$dir\\x64\", \"$dir\\x86\", \"$dir\\arm64\" -Recurse -Force"
+                    "Remove-Item \"$dir\\x64\", \"$dir\\x86\" -Recurse -Force",
+                    "Rename-Item \"$dir\\arm64\" \"$dir\\_temp\""
                 ]
             }
         }
@@ -39,6 +39,12 @@
         "App",
         "Cache",
         "Data"
+    ],
+    "post_install": [
+        "Write-Host \"Merging new version files into persisted App folder...\" -ForegroundColor Cyan",
+        "Copy-Item \"$dir\\_temp\\App\\version.dll\" \"$dir\\App\" -Force",
+        "if (-not (Test-Path \"$dir\\App\\chrome++.ini\")) { Copy-Item \"$dir\\_temp\\App\\chrome++.ini\" \"$dir\\App\" }",
+        "Remove-Item \"$dir\\_temp\" -Recurse -Force"
     ],
     "checkver": "github",
     "autoupdate": {
