@@ -33,15 +33,21 @@
             "    Write-Host \"Merging new Chrome binaries...\" -ForegroundColor Cyan",
             "    Move-Item \"$dir\\Chrome-bin\\*\" \"$dest_app\" -Force",
             "    ",
-            "    Write-Host \"Linking local executable to target...\" -ForegroundColor Cyan",
-            "    if (Test-Path \"$dir\\chrome.exe\") { Remove-Item \"$dir\\chrome.exe\" -Force }",
-            "    New-Item -ItemType SymbolicLink -Path \"$dir\\chrome.exe\" -Target \"$dest_app\\chrome.exe\" -Force | Out-Null",
+            "    Write-Host \"Generating launcher script...\" -ForegroundColor Cyan",
+            "    $real_exe = \"$dest_app\\chrome.exe\"",
+            "    $content = \"@echo off`r`nstart /d `\"$dest_app`\" `\"Chrome`\" `\"$real_exe`\" %*\"",
+            "    Set-Content \"$dir\\chrome-loader.cmd\" $content -Encoding Ascii",
             "} else {",
-            "    Write-Warning \"chrome-plus installation not found. Binaries extracted but not moved.\"",
+            "    Write-Warning \"chrome-plus installation not found. Launcher not created.\"",
             "}"
         ]
     },
-    "bin": "chrome.exe",
+    "bin": [
+        [
+            "chrome-loader.cmd",
+            "chrome"
+        ]
+    ],
     "shortcuts": [
         [
             "chrome.exe",
