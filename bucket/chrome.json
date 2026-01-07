@@ -1,20 +1,20 @@
 {
-    "version": "140.0.7499.193",
+    "version": "143.0.7499.193",
     "description": "Automatically fetch Google Chrome offline installer using GitHub Actions",
     "homepage": "https://github.com/Bush2021/chrome_installer",
     "license": "MIT",
     "architecture": {
         "64bit": {
             "url": "https://github.com/Bush2021/chrome_installer/releases/download/143.0.7499.193/x64_143.0.7499.193_chrome_installer_uncompressed.exe#/dl.7z",
-            "hash": "sha256:7489fe46b131c26ec7b69c39bc8794e83b5473b89d73c9061d684008cb95a951"
+            "hash": "7489fe46b131c26ec7b69c39bc8794e83b5473b89d73c9061d684008cb95a951"
         },
         "32bit": {
             "url": "https://github.com/Bush2021/chrome_installer/releases/download/143.0.7499.193/x86_143.0.7499.193_chrome_installer_uncompressed.exe#/dl.7z",
-            "hash": "sha256:7489fe46b131c26ec7b69c39bc8794e83b5473b89d73c9061d684008cb95a951"
+            "hash": "8d292458f5212e2d282f4b1d0c2bb054498ce3c64ddcfda14d6b645ff2d66fee"
         },
         "arm64": {
             "url": "https://github.com/Bush2021/chrome_installer/releases/download/143.0.7499.193/arm64_143.0.7499.193_chrome_installer_uncompressed.exe#/dl.7z",
-            "hash": "sha256:7489fe46b131c26ec7b69c39bc8794e83b5473b89d73c9061d684008cb95a951"
+            "hash": "aaf4e843984b38c842edd8b7e21a9528e40057812043e1db06287959f18a104c"
         }
     },
     "installer": {
