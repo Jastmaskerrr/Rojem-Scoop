@@ -3,6 +3,7 @@
     "description": "Automatically fetch Google Chrome offline installer using GitHub Actions",
     "homepage": "https://github.com/Bush2021/chrome_installer",
     "license": "MIT",
+    "depends": "chrome-plus",
     "architecture": {
         "64bit": {
             "url": "https://github.com/Bush2021/chrome_installer/releases/download/143.0.7499.193/x64_143.0.7499.193_chrome_installer_uncompressed.exe#/dl.7z",
