@@ -4,7 +4,7 @@
     "homepage": "https://github.com/Bush2021/chrome_installer",
     "license": "MIT",
     "depends": "chrome-plus",
-    "notes": "This package acts as a binary provider. It downloads and injects the official Google Chrome binaries directly into the 'rojem/chrome-plus' installation directory. It strictly requires 'chrome-plus' to be installed first."
+    "notes": "This package acts as a binary provider. It downloads and injects the official Google Chrome binaries directly into the 'rojem/chrome-plus' installation directory. It strictly requires 'chrome-plus' to be installed first.",
     "architecture": {
         "64bit": {
             "url": "https://github.com/Bush2021/chrome_installer/releases/download/143.0.7499.193/x64_143.0.7499.193_chrome_installer_uncompressed.exe#/dl.7z",

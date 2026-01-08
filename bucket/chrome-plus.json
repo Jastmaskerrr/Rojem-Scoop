@@ -3,7 +3,7 @@
     "description": "A DLL hijack implements Chrome full portability as well as tab enhancements.",
     "homepage": "https://github.com/Bush2021/chrome_plus",
     "license": "GPL-3.0-only",
-    "notes": "This package provides the portable host environment and DLL hijacking mechanism only. It does NOT contain the browser executable. You MUST install the 'chrome' package to populate the 'App' directory with the actual Google Chrome binaries."
+    "notes": "This package provides the portable host environment and DLL hijacking mechanism only. It does NOT contain the browser executable. You MUST install the 'chrome' package to populate the 'App' directory with the actual Google Chrome binaries.",
     "architecture": {
         "64bit": {
             "url": "https://github.com/Bush2021/chrome_plus/releases/download/1.14.0/Chrome++_v1.14.0_x86_x64_arm64.7z",
