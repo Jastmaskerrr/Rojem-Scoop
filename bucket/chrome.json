@@ -4,6 +4,7 @@
     "homepage": "https://github.com/Bush2021/chrome_installer",
     "license": "MIT",
     "depends": "chrome-plus",
+    "notes": "This package acts as a binary provider. It downloads and injects the official Google Chrome binaries directly into the 'rojem/chrome-plus' installation directory. It strictly requires 'chrome-plus' to be installed first."
     "architecture": {
         "64bit": {
             "url": "https://github.com/Bush2021/chrome_installer/releases/download/143.0.7499.193/x64_143.0.7499.193_chrome_installer_uncompressed.exe#/dl.7z",
@@ -33,12 +34,28 @@
             "    Write-Host \"Merging new Chrome binaries...\" -ForegroundColor Cyan",
             "    Move-Item \"$dir\\Chrome-bin\\*\" \"$dest_app\" -Force",
             "    ",
+            "    Remove-Item \"$dir\\Chrome-bin\" -Force",
+            "    Write-Host \"Linking local executable to target...\" -ForegroundColor Cyan",
+            "    if (Test-Path \"$dir\\chrome.exe\") { Remove-Item \"$dir\\chrome.exe\" -Force }",
+            "    New-Item -ItemType SymbolicLink -Path \"$dir\\chrome.exe\" -Target \"$dest_app\\chrome.exe\" -Force | Out-Null",
             "    Write-Host \"Generating launcher script...\" -ForegroundColor Cyan",
             "    $real_exe = \"$dest_app\\chrome.exe\"",
             "    $content = \"@echo off`r`nstart /d `\"$dest_app`\" `\"Chrome`\" `\"$real_exe`\" %*\"",
             "    Set-Content \"$dir\\chrome-loader.cmd\" $content -Encoding Ascii",
             "} else {",
             "    Write-Warning \"chrome-plus installation not found. Launcher not created.\"",
+            "}"
+        ]
+    },
+    "uninstaller": {
+        "script": [
+            "$cp_root = $(appdir chrome-plus $global)",
+            "if (Test-Path \"$cp_root\\current\\App\") {",
+            "    $dest_app = \"$cp_root\\current\\App\"",
+            "    Write-Host \"Removing Chrome binaries from chrome-plus...\" -ForegroundColor Yellow",
+            "    if (Test-Path \"$dest_app\\chrome.exe\") { Remove-Item \"$dest_app\\chrome.exe\" -Force }",
+            "    Get-ChildItem -Path \"$dest_app\" -Directory | Where-Object { $_.Name -match '^\\d+\\.\\d+\\.\\d+\\.\\d+$' } | Remove-Item -Recurse -Force",
+            "    if (Test-Path \"$dest_app\\chrome_proxy.exe\") { Remove-Item \"$dest_app\\chrome_proxy.exe\" -Force }",
             "}"
         ]
     },
