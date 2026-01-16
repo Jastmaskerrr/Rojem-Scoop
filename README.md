@@ -47,6 +47,8 @@ scoop install rojem/<manifest>
 | [Chrome++ Next](https://github.com/Bush2021/chrome_plus/)    | chrome-plus            | [Chrome](https://www.google.com/chrome/) 的便携化宿主环境，DLL劫持实现了Chrome浏览器的完全可移植性以及标签页增强功能 |                         | ✔       |
 | [Context Menu Manager](https://github.com/Jack251970/ContextMenuManager) | contextmenumanager     | 一个管理 Windows 右键上下文菜单的程序                        |                         | ✔       |
 | [echotrace](https://github.com/ycccccccy/echotrace)          | echotrace              | 一个本地、安全的微信聊天记录导出、分析与年度报告生成工具     |                         | ✔       |
+| [locale-remulator](https://github.com/InWILL/Locale_Remulator) | locale-remulator       | 系统区域和语言模拟器                                         |                         | ✔       |
+| [mousejiggler](https://github.com/arkane-systems/mousejiggler) | mousejiggler           | “模拟”鼠标输入来回抖动                                       |                         | 🈚️       |
 | [Neokikoeru](https://github.com/vscodev/neokikoeru)          | neokikoeru             | 基于云存储的DLsite音声作品管理和媒体播放软件，使用Go和Vue.js开发 |                         | ❌       |
 | [Open Internet Explorer](https://github.com/AigioL/OpenInternetExplorer) | open-Internet-explorer | 在 Windows 11 中打开 Internet Explorer                       |                         | 🈚️       |
 | [Stelliberty](https://github.com/Kindness-Kismet/Stellibert) | stelliberty            | 现代化 [Mihomo](https://github.com/MetaCubeX/mihomo) 客户端  |                         | ✔       |
