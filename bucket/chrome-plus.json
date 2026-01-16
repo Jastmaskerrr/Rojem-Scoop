@@ -1,9 +1,9 @@
 {
-    "version": "1.14.0",
+    "version": "1.13.0",
     "description": "A DLL hijack implements Chrome full portability as well as tab enhancements.",
     "homepage": "https://github.com/Bush2021/chrome_plus",
     "license": "GPL-3.0-only",
-    "notes": "This package provides the portable host environment and DLL hijacking mechanism only. It does NOT contain the browser executable. You MUST install the 'chrome' package to populate the 'App' directory with the actual Google Chrome binaries.",
+    "notes": "This package provides the portable host environment.",
     "architecture": {
         "64bit": {
             "url": "https://github.com/Bush2021/chrome_plus/releases/download/1.14.0/Chrome++_v1.14.0_x86_x64_arm64.7z",
@@ -11,7 +11,9 @@
             "installer": {
                 "script": [
                     "Remove-Item \"$dir\\x86\", \"$dir\\arm64\" -Recurse -Force",
-                    "Rename-Item \"$dir\\x64\" \"$dir\\_temp\""
+                    "Rename-Item \"$dir\\x64\" \"$dir\\_temp\"",
+                    "if (-not (Test-Path \"$dir\\App\")) { New-Item \"$dir\\App\" -ItemType Directory -Force | Out-Null }",
+                    "New-Item \"$dir\\App\\chrome.exe\" -ItemType File -Force | Out-Null"
                 ]
             }
         },
@@ -21,7 +23,9 @@
             "installer": {
                 "script": [
                     "Remove-Item \"$dir\\x64\", \"$dir\\arm64\" -Recurse -Force",
-                    "Rename-Item \"$dir\\x86\" \"$dir\\_temp\""
+                    "Rename-Item \"$dir\\x86\" \"$dir\\_temp\"",
+                    "if (-not (Test-Path \"$dir\\App\")) { New-Item \"$dir\\App\" -ItemType Directory -Force | Out-Null }",
+                    "New-Item \"$dir\\App\\chrome.exe\" -ItemType File -Force | Out-Null"
                 ]
             }
         },
@@ -31,7 +35,9 @@
             "installer": {
                 "script": [
                     "Remove-Item \"$dir\\x64\", \"$dir\\x86\" -Recurse -Force",
-                    "Rename-Item \"$dir\\arm64\" \"$dir\\_temp\""
+                    "Rename-Item \"$dir\\arm64\" \"$dir\\_temp\"",
+                    "if (-not (Test-Path \"$dir\\App\")) { New-Item \"$dir\\App\" -ItemType Directory -Force | Out-Null }",
+                    "New-Item \"$dir\\App\\chrome.exe\" -ItemType File -Force | Out-Null"
                 ]
             }
         }
@@ -45,8 +51,25 @@
         "Write-Host \"Merging new version files into persisted App folder...\" -ForegroundColor Cyan",
         "Copy-Item \"$dir\\_temp\\App\\version.dll\" \"$dir\\App\" -Force",
         "if (-not (Test-Path \"$dir\\App\\chrome++.ini\")) { Copy-Item \"$dir\\_temp\\App\\chrome++.ini\" \"$dir\\App\" }",
+        "if (Test-Path \"$dir\\_temp\\Data\") { Copy-Item \"$dir\\_temp\\Data\" \"$dir\" -Recurse -ErrorAction SilentlyContinue }",
+        "if (Test-Path \"$dir\\_temp\\Cache\") { Copy-Item \"$dir\\_temp\\Cache\" \"$dir\" -Recurse -ErrorAction SilentlyContinue }",
         "Remove-Item \"$dir\\_temp\" -Recurse -Force"
     ],
+    "bin": [
+        [
+            "App\\chrome.exe",
+            "chrome"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "App\\chrome.exe",
+            "Google Chrome"
+        ]
+    ],
+    "env_set": {
+        "CHROME_EXECUTABLE": "$dir\\App\\chrome.exe"
+    },
     "checkver": "github",
     "autoupdate": {
         "url": "https://github.com/Bush2021/chrome_plus/releases/download/$version/Chrome++_v$version_x86_x64_arm64.7z"

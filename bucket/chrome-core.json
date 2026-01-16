@@ -1,9 +1,8 @@
 {
-    "version": "144.0.7559.60",
+    "version": "143.0.7559.60",
     "description": "Automatically fetch Google Chrome offline installer using GitHub Actions",
     "homepage": "https://github.com/Bush2021/chrome_installer",
     "license": "MIT",
-    "depends": "chrome-plus",
     "notes": "This package acts as a binary provider. It downloads and injects the official Google Chrome binaries directly into the 'rojem/chrome-plus' installation directory. It strictly requires 'chrome-plus' to be installed first.",
     "architecture": {
         "64bit": {
@@ -35,15 +34,10 @@
             "    Move-Item \"$dir\\Chrome-bin\\*\" \"$dest_app\" -Force",
             "    ",
             "    Remove-Item \"$dir\\Chrome-bin\" -Force",
-            "    Write-Host \"Linking local executable to target...\" -ForegroundColor Cyan",
-            "    if (Test-Path \"$dir\\chrome.exe\") { Remove-Item \"$dir\\chrome.exe\" -Force }",
-            "    New-Item -ItemType SymbolicLink -Path \"$dir\\chrome.exe\" -Target \"$dest_app\\chrome.exe\" -Force | Out-Null",
-            "    Write-Host \"Generating launcher script...\" -ForegroundColor Cyan",
-            "    $real_exe = \"$dest_app\\chrome.exe\"",
-            "    $content = \"@echo off`r`nstart /d `\"$dest_app`\" `\"Chrome`\" `\"$real_exe`\" %*\"",
-            "    Set-Content \"$dir\\chrome-loader.cmd\" $content -Encoding Ascii",
+            "    ",
+            "    Write-Host \"Chrome binaries injected successfully. The fake placeholder has been overwritten.\" -ForegroundColor Green",
             "} else {",
-            "    Write-Warning \"chrome-plus installation not found. Launcher not created.\"",
+            "    Write-Warning \"chrome-plus installation not found. Binaries NOT moved.\"",
             "}"
         ]
     },
@@ -58,21 +52,6 @@
             "    if (Test-Path \"$dest_app\\chrome_proxy.exe\") { Remove-Item \"$dest_app\\chrome_proxy.exe\" -Force }",
             "}"
         ]
-    },
-    "bin": [
-        [
-            "chrome-loader.cmd",
-            "chrome"
-        ]
-    ],
-    "shortcuts": [
-        [
-            "chrome.exe",
-            "Google Chrome"
-        ]
-    ],
-    "env_set": {
-        "CHROME_EXECUTABLE": "$dir\\chrome.exe"
     },
     "checkver": "github",
     "autoupdate": {
