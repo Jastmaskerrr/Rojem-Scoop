@@ -49,10 +49,10 @@
         }
     },
     "checkver": {
-        "github": "https://github.com/mcmilk/7-Zip-zstd",
-        "regex": "releases/tag/v([\\w.-]+)"
+        "url": "https://api.github.com/repositories/61958135/releases",
+        "jsonpath": "$[0].tag_name"
     },
     "autoupdate": {
-        "url": "https://github.com/mcmilk/7-Zip-zstd/releases/download/v$version/TotalCmd.7z"
+        "url": "https://github.com/mcmilk/7-Zip-zstd/releases/download/$version/TotalCmd.7z"
     }
 }
