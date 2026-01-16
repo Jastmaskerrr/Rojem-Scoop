@@ -1,5 +1,5 @@
 {
-    "version": "1.13.0",
+    "version": "1.14.0",
     "description": "A DLL hijack implements Chrome full portability as well as tab enhancements.",
     "homepage": "https://github.com/Bush2021/chrome_plus",
     "license": "GPL-3.0-only",
