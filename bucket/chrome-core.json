@@ -3,6 +3,7 @@
     "description": "Automatically fetch Google Chrome offline installer using GitHub Actions",
     "homepage": "https://github.com/Bush2021/chrome_installer",
     "license": "MIT",
+    "depends": "chrome-plus",
     "notes": "This package acts as a binary provider. It downloads and injects the official Google Chrome binaries directly into the 'rojem/chrome-plus' installation directory. It strictly requires 'chrome-plus' to be installed first.",
     "architecture": {
         "64bit": {
