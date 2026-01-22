@@ -44,8 +44,8 @@
             "if (Test-Path \"$TCDir\\current\") {",
             "    $PluginDir = \"$TCDir\\current\\plugins\\Wlx\\Imagine\"",
             "    if (!(Test-Path \"$PluginDir\")) { New-Item \"$PluginDir\" -ItemType Directory -Force | Out-Null }",
-            "    Copy-Item \"$dir\\*\" \"$PluginDir\" -Recurse -Force",
-            "    Write-Host \"Imagine plugin copied to Total Commander ($PluginDir)\"",
+            "    Copy-Item \"$dir\\*\" \"$PluginDir\" -Recurse -Force -Exclude \"Imagine.ini\", \"PlugInst.inf\"",
+            "    Write-Host \"Imagine plugin copied to Total Commander ($PluginDir) (excluding Imagine.ini)\"",
             "} else {",
             "    Write-Warning \"Total Commander (scoop) not found. Skipped plugin installation.\"",
             "}"
