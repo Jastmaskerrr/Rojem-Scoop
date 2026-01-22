@@ -1,0 +1,70 @@
+{
+    "version": "2.3.0",
+    "description": "Fast, compact image and animation viewer. Can be used as a standalone application or integrated as a Total Commander Lister plugin.",
+    "homepage": "https://www.nyam.pe.kr/dev/imagine/",
+    "license": {
+        "identifier": "Freeware",
+        "url": "https://www.nyam.pe.kr/dev/imagine/#license"
+    },
+    "depends": "extras/totalcommander",
+    "pre_install": "if (!(Test-Path \"$persist_dir\\Imagine.ini\")) { New-Item \"$dir\\Imagine.ini\" | Out-Null }",
+    "architecture": {
+        "64bit": {
+            "url": "https://raw.githubusercontent.com/nyam1003/imagine/main/x64/Imagine_2.3.0_x64_Unicode_Full.zip",
+            "hash": "b9fee3a058bacca51f9a2fe4c4747f761ad11be02340adce92634bd53ffb10e5",
+            "bin": [
+                "Imagine64.exe",
+                [
+                    "Imagine64.exe",
+                    "Imagine"
+                ]
+            ],
+            "shortcuts": [
+                [
+                    "Imagine64.exe",
+                    "Imagine"
+                ]
+            ]
+        },
+        "32bit": {
+            "url": "https://raw.githubusercontent.com/nyam1003/imagine/main/Imagine_2.3.0_Unicode_Full.zip",
+            "hash": "168f9d30e0dfbf6350983e69211f70acb1fb140a6f7ce7e23bb4f81263f4a3af",
+            "bin": "Imagine.exe",
+            "shortcuts": [
+                [
+                    "Imagine.exe",
+                    "Imagine"
+                ]
+            ]
+        }
+    },
+    "installer": {
+        "script": [
+            "$TCDir = $(appdir totalcommander $global)",
+            "if (Test-Path \"$TCDir\\current\") {",
+            "    $PluginDir = \"$TCDir\\current\\plugins\\Wlx\\Imagine\"",
+            "    if (!(Test-Path \"$PluginDir\")) { New-Item \"$PluginDir\" -ItemType Directory -Force | Out-Null }",
+            "    Copy-Item \"$dir\\*\" \"$PluginDir\" -Recurse -Force",
+            "    Write-Host \"Imagine plugin copied to Total Commander ($PluginDir)\"",
+            "} else {",
+            "    Write-Warning \"Total Commander (scoop) not found. Skipped plugin installation.\"",
+            "}"
+        ]
+    },
+    "persist": [
+        "Imagine.ini",
+        "PlugInst.inf",
+        "Plugin"
+    ],
+    "checkver": "v(\\d[\\d.]+)",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://raw.githubusercontent.com/nyam1003/imagine/main/x64/Imagine_$version_x64_Unicode_Full.zip"
+            },
+            "32bit": {
+                "url": "https://raw.githubusercontent.com/nyam1003/imagine/main/Imagine_$version_Unicode_Full.zip"
+            }
+        }
+    }
+}
