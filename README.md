@@ -44,9 +44,10 @@ scoop install rojem/<manifest>
 | [Chrome](https://github.com/Bush2021/chrome_installer)       | chrome-core            | 自动抓取 [Google Chrome](https://www.google.com/chrome/) 官方离线安装包，并将其二进制文件无缝注入至 `chrome-plus` 的宿主目录中 | 🈚️       |
 | [Chrome++ Next](https://github.com/Bush2021/chrome_plus/)    | chrome-plus            | [Chrome](https://www.google.com/chrome/) 的便携化宿主环境，DLL劫持实现了Chrome浏览器的完全可移植性以及标签页增强功能 | ✔       |
 | [Context Menu Manager](https://github.com/Jack251970/ContextMenuManager) | context-menu-manager   | 一个管理 Windows 右键上下文菜单的程序                        | ✔       |
+| [CudaLister](https://github.com/Alexey-T/CudaLister/)        | cudalister             | 基于 ATSynEdit 的 Total Commander Lister 插件                | 🈚️       |
 | [Digital Clock](https://sourceforge.net/projects/digitalclock4/) | digital-clock-5        | 一款美观的可定制时钟，支持插件功能                           | ✔       |
 | [echotrace](https://github.com/ycccccccy/echotrace)          | echotrace              | 一个本地、安全的[微信](https://weixin.qq.com/)聊天记录导出、分析与年度报告生成工具 | ✔       |
-| [imagine](https://www.nyam.pe.kr/dev/imagine/)               | imagine                | 快速、紧凑的图像和动画查看器。可以作为独立应用程序使用，也可以作为 [Total Commander](https://www.ghisler.com/) 的 Lister 插件集成 |         |
+| [imagine](https://www.nyam.pe.kr/dev/imagine/)               | imagine                | 快速、紧凑的图像和动画查看器。可以作为独立应用程序使用，也可以作为 [Total Commander](https://www.ghisler.com/) 的 Lister 插件集成 | ✔       |
 | [locale-remulator](https://github.com/InWILL/Locale_Remulator) | locale-remulator       | 系统区域和语言模拟器                                         | ✔       |
 | [mouse jiggler](https://github.com/arkane-systems/mousejiggler) | mouse-jiggler          | “模拟”鼠标输入来回抖动                                       | 🈚️       |
 | [Neokikoeru](https://github.com/vscodev/neokikoeru)          | neokikoeru             | 基于云存储的 DLsite 音声作品管理和媒体播放软件               | ❌       |
