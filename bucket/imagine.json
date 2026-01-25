@@ -1,5 +1,5 @@
 {
-    "version": "2.2.0",
+    "version": "2.3.0",
     "description": "Fast, compact image and animation viewer. Can be used as a standalone application or integrated as a Total Commander Lister plugin.",
     "homepage": "https://www.nyam.pe.kr/dev/imagine/",
     "license": {
@@ -7,7 +7,7 @@
         "url": "https://www.nyam.pe.kr/dev/imagine/#license"
     },
     "suggest": {
-    "Total Commander Plugin Host": "extras/totalcommander"
+        "Total Commander Plugin Host": "extras/totalcommander"
     },
     "pre_install": "if (!(Test-Path \"$persist_dir\\Imagine.ini\")) { New-Item \"$dir\\Imagine.ini\" | Out-Null }",
     "architecture": {
