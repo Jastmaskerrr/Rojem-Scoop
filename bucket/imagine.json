@@ -1,12 +1,14 @@
 {
-    "version": "2.3.0",
+    "version": "2.2.0",
     "description": "Fast, compact image and animation viewer. Can be used as a standalone application or integrated as a Total Commander Lister plugin.",
     "homepage": "https://www.nyam.pe.kr/dev/imagine/",
     "license": {
         "identifier": "Freeware",
         "url": "https://www.nyam.pe.kr/dev/imagine/#license"
     },
-    "depends": "extras/totalcommander",
+    "suggest": {
+    "Total Commander Plugin Host": "extras/totalcommander"
+    },
     "pre_install": "if (!(Test-Path \"$persist_dir\\Imagine.ini\")) { New-Item \"$dir\\Imagine.ini\" | Out-Null }",
     "architecture": {
         "64bit": {
@@ -41,13 +43,17 @@
     "installer": {
         "script": [
             "$TCDir = $(appdir totalcommander $global)",
-            "if (Test-Path \"$TCDir\\current\") {",
+            "",
+            "if ($TCDir -and (Test-Path \"$TCDir\\current\")) {",
+            "    Write-Host \"Found Total Commander, integrating plugin...\" -ForegroundColor Cyan",
+            "    ",
             "    $PluginDir = \"$TCDir\\current\\plugins\\Wlx\\Imagine\"",
             "    if (!(Test-Path \"$PluginDir\")) { New-Item \"$PluginDir\" -ItemType Directory -Force | Out-Null }",
+            "    ",
             "    Copy-Item \"$dir\\*\" \"$PluginDir\" -Recurse -Force -Exclude \"Imagine.ini\", \"PlugInst.inf\"",
-            "    Write-Host \"Imagine plugin copied to Total Commander ($PluginDir) (excluding Imagine.ini)\"",
+            "    Write-Host \"Imagine plugin installed to: $PluginDir\" -ForegroundColor Green",
             "} else {",
-            "    Write-Warning \"Total Commander (scoop) not found. Skipped plugin installation.\"",
+            "    Write-Host \"Total Commander (Scoop) not found. Installing as standalone application only.\" -ForegroundColor Yellow",
             "}"
         ]
     },
