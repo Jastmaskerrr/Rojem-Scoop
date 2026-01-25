@@ -1,10 +1,10 @@
 {
-    "version": "11.45",
+    "version": "13.45",
     "description": "A command-line application for reading, writing and editing meta information in a wide variety of files.",
     "homepage": "https://exiftool.org",
     "license": "GPL-1.0-or-later|Artistic-1.0-Perl",
     "suggest": {
-    "Total Commander Plugin Host": "extras/totalcommander"
+        "Total Commander Plugin Host": "extras/totalcommander"
     },
     "notes": "If Total Commander is detected, this package automatically copies the ExifTool executable to 'plugins\\Wlx\\ExifToolView'. This serves as the required backend binary for the ExifToolView Lister plugin to function correctly.",
     "architecture": {
