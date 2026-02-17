@@ -15,8 +15,21 @@
         ]
     ],
     "pre_install": [
-        "if (!(Test-Path \"$persist_dir\\config.xml\") -or !(Get-Item \"$persist_dir\\config.xml\").Length) {",
-        "    New-Item \"$persist_dir\\config.xml\" -ItemType File -Force -ErrorAction SilentlyContinue | Out-Null",
+        "$config_path = \"$persist_dir\\config.xml\"",
+        "",
+        "if (!(Test-Path $config_path) -or (Get-Item $config_path).Length -eq 0) {",
+        "    if (!(Test-Path \"$persist_dir\")) { New-Item \"$persist_dir\" -ItemType Directory -Force | Out-Null }",
+        "    ",
+        "    Write-Host \"Generating default config.xml...\" -ForegroundColor Yellow",
+        "    ",
+        "    $content = @(",
+        "        '<?xml version=\"1.0\" encoding=\"utf-8\"?>',",
+        "        '<Config>',",
+        "        '  <Language>zh-CN</Language>',",
+        "        '</Config>'",
+        "    )",
+        "    ",
+        "    Set-Content -Path $config_path -Value $content -Encoding UTF8",
         "}"
     ],
     "persist": "config.xml",
