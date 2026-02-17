@@ -47,8 +47,10 @@ scoop install rojem/<manifest>
 | [CudaLister](https://github.com/Alexey-T/CudaLister/)        | cudalister             | 基于 ATSynEdit 的 Total Commander Lister 插件                | 🈚️       |
 | [Digital Clock](https://sourceforge.net/projects/digitalclock4/) | digital-clock-5        | 一款美观的可定制时钟，支持插件功能                           | ✔       |
 | [echotrace](https://github.com/ycccccccy/echotrace)          | echotrace              | 一个本地、安全的[微信](https://weixin.qq.com/)聊天记录导出、分析与年度报告生成工具 | ✔       |
+| [ExHyperV](https://github.com/Justsenger/ExHyperV)           | exhyperv               | 一款提供高级HyperV虚拟机功能的图形用户界面软件，例如DDA和GPU-PV。 | ✔       |
 | [ExifTool](https://exiftool.org/)                            | exiftool               | 一个用于读取、写入和编辑各种文件元信息的命令行应用程序。如果检测  [Total Commander](https://www.ghisler.com/) ，将可执行文件复制到 [ExifToolView](totalcmd.net/plugring/exiftoolview.html) 插件目录内 | 🈚️       |
 | [Imagine](https://www.nyam.pe.kr/dev/imagine/)               | imagine                | 快速、紧凑的图像和动画查看器。可以作为独立应用程序使用，也可以作为 [Total Commander](https://www.ghisler.com/) 的 Lister 插件集成 | ✔       |
+| [LinguaGacha](https://github.com/neavo/LinguaGacha)          | linguagacha            | 使用 AI 能力一键翻译 小说、游戏、字幕 等文本内容的次世代文本翻译器 | ✔       |
 | [locale-remulator](https://github.com/InWILL/Locale_Remulator) | locale-remulator       | 系统区域和语言模拟器                                         | ✔       |
 | [mouse jiggler](https://github.com/arkane-systems/mousejiggler) | mouse-jiggler          | “模拟”鼠标输入来回抖动                                       | 🈚️       |
 | [Neokikoeru](https://github.com/vscodev/neokikoeru)          | neokikoeru             | 基于云存储的 DLsite 音声作品管理和媒体播放软件               | ❌       |
