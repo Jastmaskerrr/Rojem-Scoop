@@ -52,6 +52,7 @@ scoop install rojem/<manifest>
 | [Imagine](https://www.nyam.pe.kr/dev/imagine/)               | imagine                | 快速、紧凑的图像和动画查看器。可以作为独立应用程序使用，也可以作为 [Total Commander](https://www.ghisler.com/) 的 Lister 插件集成 | ✔       |
 | [LinguaGacha](https://github.com/neavo/LinguaGacha)          | linguagacha            | 使用 AI 能力一键翻译 小说、游戏、字幕 等文本内容的次世代文本翻译器 | ✔       |
 | [locale-remulator](https://github.com/InWILL/Locale_Remulator) | locale-remulator       | 系统区域和语言模拟器                                         | ✔       |
+| MoonLight 基地版                                             | moonlight-foundation   | 基地版[moonlight](https://github.com/moonlight-stream/moonlight-qt)客户端，支持[官方版Sunshine](https://docs.lizardbyte.dev/projects/sunshine/latest/index.html)和[基地版Sunshine](https://sunshine-foundation.vercel.app/) | ✔       |
 | [mouse jiggler](https://github.com/arkane-systems/mousejiggler) | mouse-jiggler          | “模拟”鼠标输入来回抖动                                       | 🈚️       |
 | [Neokikoeru](https://github.com/vscodev/neokikoeru)          | neokikoeru             | 基于云存储的 DLsite 音声作品管理和媒体播放软件               | ❌       |
 | [Open Internet Explorer](https://github.com/AigioL/OpenInternetExplorer) | open-Internet-explorer | 在 Windows 11 中打开 Internet Explorer                       | 🈚️       |
