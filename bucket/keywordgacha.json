@@ -18,8 +18,9 @@
         "}"
     ],
     "persist": [
-        "resource\\preset",
-        "config.json"
+        "resource\\config.json",
+        "input",
+        "output"
     ],
     "checkver": {
         "github": "https://github.com/neavo/KeywordGacha",
