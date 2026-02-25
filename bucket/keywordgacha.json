@@ -13,8 +13,8 @@
         ]
     ],
     "pre_install": [
-        "if (!(Test-Path \"$persist_dir\\config.json\") -or !(Get-Item \"$persist_dir\\config.json\").Length) {",
-        "    New-Item \"$persist_dir\\config.json\" -ItemType File -Force -ErrorAction SilentlyContinue | Out-Null",
+        "if (!(Test-Path \"$persist_dir\\resource\\config.json\") -or !(Get-Item \"$persist_dir\\resource\\config.json\").Length) {",
+        "    New-Item \"$persist_dir\\resource\\config.json\" -ItemType File -Force -ErrorAction SilentlyContinue | Out-Null",
         "}"
     ],
     "persist": [
