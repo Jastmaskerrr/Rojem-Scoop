@@ -1,13 +1,13 @@
 {
-    "version": "1.1.37.02a0",
+    "version": "1.1.37.02a2",
     "description": "Official AutoHotkey script compiler - written itself in AutoHotkey",
     "homepage": "https://github.com/AutoHotkey/Ahk2Exe",
     "license": "WTFPL",
     "notes": "Ahk2Exe is a GUI application but also supports command line arguments.",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/AutoHotkey/Ahk2Exe/releases/download/Ahk2Exe1.1.37.02a0a/Ahk2Exe1.1.37.02a0.zip",
-            "hash": "287079ba96dcfa79fa6c568481f4a26bd3ac26671f8a21c4c03ed331657d53c0"
+            "url": "https://github.com/AutoHotkey/Ahk2Exe/releases/download/Ahk2Exe1.1.37.02a2/Ahk2Exe1.1.37.02a2.zip",
+            "hash": "c29b8c3a5124850d79fc9e66e2ca79677c377d7f31631ad3022ba159c5d9e3be"
         }
     },
     "bin": "Ahk2Exe.exe",
