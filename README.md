@@ -58,6 +58,7 @@ scoop install rojem/<manifest>
 | [Neokikoeru](https://github.com/vscodev/neokikoeru)          | neokikoeru             | 基于云存储的 DLsite 音声作品管理和媒体播放软件               | ❌       |
 | [Open Internet Explorer](https://github.com/AigioL/OpenInternetExplorer) | open-Internet-explorer | 在 Windows 11 中打开 Internet Explorer                       | 🈚️       |
 | [Stelliberty](https://github.com/Kindness-Kismet/Stellibert) | stelliberty            | 现代化 [Mihomo](https://github.com/MetaCubeX/mihomo) 客户端  | ✔       |
+| [Traynard](https://github.com/tabris17/traynard)             | traynard               | 将任意应用窗口最小化到系统托盘                               | ✔       |
 | [Tremotesf 2](https://github.com/equeim/tremotesf2)          | tremotesf              | Bittorrent 客户端 [Transmission](https://transmissionbt.com/) 的GUI | ❌       |
 | [wx_key](https://github.com/ycccccccy/wx_key/)               | wx-key                 | 获取[微信](https://weixin.qq.com/)4.0版本以上数据库密钥和图片密钥的工具 | ✔       |
 
