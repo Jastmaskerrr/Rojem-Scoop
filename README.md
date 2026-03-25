@@ -59,6 +59,7 @@ scoop install rojem/<manifest>
 | [Neokikoeru](https://github.com/vscodev/neokikoeru)          | neokikoeru               | 基于云存储的 DLsite 音声作品管理和媒体播放软件               | ❌       |
 | [Open Internet Explorer](https://github.com/AigioL/OpenInternetExplorer) | open-Internet-explorer   | 在 Windows 11 中打开 Internet Explorer                       | 🈚️       |
 | [Pomotroid](https://github.com/splode/pomotroid)             | pomotroid                | 简单易用的番茄钟计时器                                       | ❌       |
+| [pyTranscriber](https://pytranscriber.github.io/)            | pytranscriber            | 通过友好的图形用户界面，为音频/视频文件自动生成转录/字幕     | ❌       |
 | [scoop-search-multisource](https://github.com/plicit/scoop-search-multisource) | scoop-search-multisource | 默认情况下搜索本地Scoop活动存储桶和远程 Rasa HTML scoop目录  | ❌       |
 | [Stelliberty](https://github.com/Kindness-Kismet/Stellibert) | stelliberty              | 现代化 [Mihomo](https://github.com/MetaCubeX/mihomo) 客户端  | ✔       |
 | [Traynard](https://github.com/tabris17/traynard)             | traynard                 | 将任意应用窗口最小化到系统托盘                               | ✔       |
