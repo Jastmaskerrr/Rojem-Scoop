@@ -11,10 +11,11 @@
     },
     "shortcuts": [
         [
-            "pyTranscriber-v$version.exe",
+            "pyTranscriber.exe",
             "pyTranscriber"
         ]
     ],
+    "pre_install": "Rename-Item \"$dir\\pyTranscriber-v$version.exe\" \"$dir\\pyTranscriber.exe\"",
     "checkver": {
         "url": "https://api.github.com/repos/raryelcostasouza/pyTranscriber/releases",
         "jsonpath": "$[0].assets[*].browser_download_url",
