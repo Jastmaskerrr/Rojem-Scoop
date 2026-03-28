@@ -41,6 +41,7 @@ scoop install rojem/<manifest>
 | [Apollo Profile Manager](https://github.com/ClassicOldSong/ApolloProfileManager) | apollo-profile-manager       | 管理和自动交换 [Apollo ](https://github.com/ClassicOldSong/Apollo)不同客户端之间的游戏配置文件、存档文件、模组集和其他用户数据的工具 | ✔       |
 | [AutoHotkey_H](https://github.com/thqby/AutoHotkey_H)        | autohotkey-h                 | 一个具有多线程等附加功能的[AHK V2](https://www.autohotkey.com/v2/)分支 | 🈚️       |
 | [AutoHotkey v1](https://www.autohotkey.com)                  | autohotkey1                  | [AHK v1](https://www.autohotkey.com/download/1.1/)版，与`main`中的AHK共存 | 🈚️       |
+| [CaesiumCLT](https://saerasoft.com/caesiumclt/)              | caesium-clt                  | Caesium命令行工具 - 有损/无损图像压缩工具                    | 🈚️       |
 | [CefFlashBrowser](https://github.com/Mzying2001/CefFlashBrowser) | cefflashbrowser              | 自带 Flash Player 插件的浏览器，可以正常显示网页上的 Flash 内容，此外还支持打开本地 SWF 文件，管理 Flash 游戏存档等。 | ✔       |
 | [Chrome](https://github.com/Bush2021/chrome_installer)       | chrome-core                  | 自动抓取 [Google Chrome](https://www.google.com/chrome/) 官方离线安装包，并将其二进制文件无缝注入至 `chrome-plus` 的宿主目录中 | 🈚️       |
 | [Chrome++ Next](https://github.com/Bush2021/chrome_plus/)    | chrome-plus                  | [Chrome](https://www.google.com/chrome/) 的便携化宿主环境，DLL劫持实现了Chrome浏览器的完全可移植性以及标签页增强功能 | ✔       |
