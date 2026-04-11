@@ -1,5 +1,5 @@
 {
-    "version": "2.5.3",
+    "version": "2.5.4",
     "description": "Fast, compact image and animation viewer. Can be used as a standalone application or integrated as a Total Commander Lister plugin.",
     "homepage": "https://www.nyam.pe.kr/dev/imagine/",
     "license": {
@@ -12,8 +12,8 @@
     "pre_install": "if (!(Test-Path \"$persist_dir\\Imagine.ini\")) { New-Item \"$dir\\Imagine.ini\" | Out-Null }",
     "architecture": {
         "64bit": {
-            "url": "https://raw.githubusercontent.com/nyam1003/imagine/main/x64/Imagine_2.5.3_x64_Unicode_Full.zip",
-            "hash": "e3becaa3227adedb3a482e84937a6ae623539540a487f5da667f2992265d28f3",
+            "url": "https://raw.githubusercontent.com/nyam1003/imagine/main/x64/Imagine_2.5.4_x64_Unicode_Full.zip",
+            "hash": "22414a160d7ef74e88fd2c03fac1152a07abd7272b4b096478974ba0ceb6ab5f",
             "bin": [
                 "Imagine64.exe",
                 [
@@ -29,8 +29,8 @@
             ]
         },
         "32bit": {
-            "url": "https://raw.githubusercontent.com/nyam1003/imagine/main/Imagine_2.5.3_Unicode_Full.zip",
-            "hash": "a377124ffca88cbae94ada7eeb9c68e99fde25d5caa16048ddcb25fc58bf9af1",
+            "url": "https://raw.githubusercontent.com/nyam1003/imagine/main/Imagine_2.5.4_Unicode_Full.zip",
+            "hash": "ee23977ab04f9e42f7dfef1756d03c51c47906f3fa641cc169dd31375041f00d",
             "bin": "Imagine.exe",
             "shortcuts": [
                 [
@@ -40,8 +40,8 @@
             ]
         },
         "arm64": {
-            "url": "https://raw.githubusercontent.com/nyam1003/imagine/main/arm64/Imagine_2.5.3_arm64_Unicode_Full.zip",
-            "hash": "8c5a1b6cc2a8cdf570e92e0055ff2f93d8f5bc2566812a955c0f1169ed8dd336",
+            "url": "https://raw.githubusercontent.com/nyam1003/imagine/main/arm64/Imagine_2.5.4_arm64_Unicode_Full.zip",
+            "hash": "2ac95ebbe2694d23da0d4007fa1f60743a6d49237855ca07abe651a090ee189f",
             "bin": "Imagine.exe",
             "shortcuts": [
                 [
