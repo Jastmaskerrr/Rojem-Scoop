@@ -12,6 +12,11 @@
             "hash": "89ae3e9c6d2ac34844faaa2c734190aa04ac596bdac96ebca16dacb672a322ba"
         }
     },
+    "installer": {
+        "script": [
+            "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\uninstall.exe\", \"$dir\\unins000.exe\" -Recurse -Force -ErrorAction SilentlyContinue"
+        ]
+    },
     "shortcuts": [
         [
             "bilibili-history-frontend.exe",
