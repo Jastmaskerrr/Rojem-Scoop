@@ -56,7 +56,7 @@ scoop install rojem/<manifest>
 | [KeywordGacha](https://github.com/neavo/KeywordGacha)        | keywordgacha                 | 使用 AI 能力一键分析 小说、游戏、字幕 等文本内容并生成术语表的次世代翻译辅助工具 | ✔       |
 | [LinguaGacha](https://github.com/neavo/LinguaGacha)          | linguagacha                  | 使用 AI 能力一键翻译 小说、游戏、字幕 等文本内容的次世代文本翻译器 | ✔       |
 | [locale-remulator](https://github.com/InWILL/Locale_Remulator) | locale-remulator             | 系统区域和语言模拟器                                         | ✔       |
-| MoonLight [基地版](https://github.com/qiin2333/moonlight-qt) | moonlight-foundation         | 基地版[moonlight](https://github.com/moonlight-stream/moonlight-qt)客户端，支持[官方版Sunshine](https://docs.lizardbyte.dev/projects/sunshine/latest/index.html)和[基地版Sunshine](https://sunshine-foundation.vercel.app/) | ✔       |
+| [MoonLight 基地版](https://github.com/qiin2333/moonlight-qt) | moonlight-foundation         | 基地版[moonlight](https://github.com/moonlight-stream/moonlight-qt)客户端，支持[官方版Sunshine](https://docs.lizardbyte.dev/projects/sunshine/latest/index.html)和[基地版Sunshine](https://sunshine-foundation.vercel.app/) | ✔       |
 | [mouse jiggler](https://github.com/arkane-systems/mousejiggler) | mouse-jiggler                | “模拟”鼠标输入来回抖动                                       | 🈚️       |
 | [Neokikoeru](https://github.com/vscodev/neokikoeru)          | neokikoeru                   | 基于云存储的 DLsite 音声作品管理和媒体播放软件               | ❌       |
 | [OliveTin](https://www.olivetin.app/)                        | olivetin                     | OliveTin 提供通过网络界面安全且简单地访问预定义的 shell 命令。 | ✔       |
@@ -64,6 +64,7 @@ scoop install rojem/<manifest>
 | [Pomotroid](https://github.com/splode/pomotroid)             | pomotroid                    | 简单易用的番茄钟计时器                                       | ❌       |
 | [pyTranscriber](https://pytranscriber.github.io/)            | pytranscriber                | 通过友好的图形用户界面，为音频/视频文件自动生成转录/字幕     | ❌       |
 | [scoop-search-multisource](https://github.com/plicit/scoop-search-multisource) | scoop-search-multisource     | 默认情况下搜索本地Scoop活动存储桶和远程 Rasa HTML scoop目录  | ❌       |
+| [Send Windows Key](https://www.sordum.org/12894/)            | send-windows-key             | 通过命令行发送Windows按键                                    | 🈚️       |
 | [Stelliberty](https://github.com/Kindness-Kismet/Stellibert) | stelliberty                  | 现代化 [Mihomo](https://github.com/MetaCubeX/mihomo) 客户端  | ✔       |
 | [Traynard](https://github.com/tabris17/traynard)             | traynard                     | 将任意应用窗口最小化到系统托盘                               | ✔       |
 | [Tremotesf 2](https://github.com/equeim/tremotesf2)          | tremotesf                    | Bittorrent 客户端 [Transmission](https://transmissionbt.com/) 的GUI | ❌       |
