@@ -9,11 +9,10 @@
     "suggest": {
         "Total Commander Plugin Host": "extras/totalcommander"
     },
-    "pre_install": "if (!(Test-Path \"$persist_dir\\Imagine.ini\")) { New-Item \"$dir\\Imagine.ini\" | Out-Null }",
     "architecture": {
         "64bit": {
             "url": "https://raw.githubusercontent.com/nyam1003/imagine/main/x64/Imagine_2.5.4_x64_Unicode_Full.zip",
-            "hash": "22414a160d7ef74e88fd2c03fac1152a07abd7272b4b096478974ba0ceb6ab5f",
+            "hash": "18586517125b977cbf52102d16584e8181095e7ba4061b52e33eb7a597e7c29a",
             "bin": [
                 "Imagine64.exe",
                 [
@@ -30,7 +29,7 @@
         },
         "32bit": {
             "url": "https://raw.githubusercontent.com/nyam1003/imagine/main/Imagine_2.5.4_Unicode_Full.zip",
-            "hash": "ee23977ab04f9e42f7dfef1756d03c51c47906f3fa641cc169dd31375041f00d",
+            "hash": "fe44d0bfc07105548ba567f59e05ecc5a7b016c29ce3a93c062b8fc1889fa05c",
             "bin": "Imagine.exe",
             "shortcuts": [
                 [
@@ -41,7 +40,7 @@
         },
         "arm64": {
             "url": "https://raw.githubusercontent.com/nyam1003/imagine/main/arm64/Imagine_2.5.4_arm64_Unicode_Full.zip",
-            "hash": "2ac95ebbe2694d23da0d4007fa1f60743a6d49237855ca07abe651a090ee189f",
+            "hash": "22086074c615dff983029c22a873591721f6a49a781aecb18b109eab57521b70",
             "bin": "Imagine.exe",
             "shortcuts": [
                 [
@@ -51,6 +50,16 @@
             ]
         }
     },
+    "pre_install": [
+        "if (!(Test-Path \"$persist_dir\\Imagine.ini\")) { New-Item \"$dir\\Imagine.ini\" | Out-Null }",
+        "",
+        "$tc_procs = Get-Process -Name \"totalcmd\", \"totalcmd64\" -ErrorAction SilentlyContinue",
+        "if ($tc_procs) {",
+        "    Write-Host \"[Error] Total Commander is currently running!\" -ForegroundColor Red",
+        "    Write-Host \"Installation aborted to protect directory structure. Please close Total Commander and try again.\" -ForegroundColor Yellow",
+        "    exit 1",
+        "}"
+    ],
     "installer": {
         "script": [
             "$TCDir = $(appdir totalcommander $global)",

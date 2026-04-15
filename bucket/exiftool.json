@@ -19,7 +19,16 @@
             "extract_dir": "exiftool-13.55_32"
         }
     },
-    "pre_install": "Copy-Item \"$dir\\exiftool(-k).exe\" \"$dir\\exiftool.exe\"",
+    "pre_install": [
+        "Copy-Item \"$dir\\exiftool(-k).exe\" \"$dir\\exiftool.exe\"",
+        "",
+        "$tc_procs = Get-Process -Name \"totalcmd\", \"totalcmd64\" -ErrorAction SilentlyContinue",
+        "if ($tc_procs) {",
+        "    Write-Host \"[Error] Total Commander is currently running!\" -ForegroundColor Red",
+        "    Write-Host \"Installation aborted to protect directory structure. Please close Total Commander and try again.\" -ForegroundColor Yellow",
+        "    exit 1",
+        "}"
+    ],
     "installer": {
         "script": [
             "$TCDir = $(appdir totalcommander $global)",
