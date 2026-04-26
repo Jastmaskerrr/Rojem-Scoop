@@ -12,7 +12,7 @@
     "architecture": {
         "64bit": {
             "url": "https://raw.githubusercontent.com/nyam1003/imagine/main/x64/Imagine_2.5.5_x64_Unicode_Full.zip",
-            "hash": "7f4d4f5435c2123ccf2fa2523b2748f83f2c461ac332148eb86f2eb3e7328831",
+            "hash": "566ffff37f4462aff7879fbbf39d9886a8acc947f0befd37198ba294df9ef0eb",
             "bin": [
                 "Imagine64.exe",
                 [
@@ -29,7 +29,7 @@
         },
         "32bit": {
             "url": "https://raw.githubusercontent.com/nyam1003/imagine/main/Imagine_2.5.5_Unicode_Full.zip",
-            "hash": "48051a4ef4cae55c1f42af36a2c25775f103e7eef86d119a0a0a28c8802852b7",
+            "hash": "9ddba5616cba82b225538f6d550e0515d92aa1127dae6aaf63298d47a1ed34d2",
             "bin": "Imagine.exe",
             "shortcuts": [
                 [
@@ -40,7 +40,7 @@
         },
         "arm64": {
             "url": "https://raw.githubusercontent.com/nyam1003/imagine/main/arm64/Imagine_2.5.5_arm64_Unicode_Full.zip",
-            "hash": "2f281e7c3e6ec2a342150df3635993f87f1ff7b09ea94fc80de1ac4ccf4fbf78",
+            "hash": "ea8ae583f10d474daa01f966ce3bd1d8ac850c60fa718e01536af696eea114d4",
             "bin": "Imagine.exe",
             "shortcuts": [
                 [
