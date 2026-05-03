@@ -66,6 +66,7 @@ scoop install rojem/<manifest>
 | [Neokikoeru](https://github.com/vscodev/neokikoeru)          | neokikoeru                   | 基于云存储的 DLsite 音声作品管理和媒体播放软件               | ❌       |
 | [OliveTin](https://www.olivetin.app/)                        | olivetin                     | OliveTin 提供通过网络界面安全且简单地访问预定义的 shell 命令。 | ✔       |
 | [Open Internet Explorer](https://github.com/AigioL/OpenInternetExplorer) | open-Internet-explorer       | 在 Windows 11 中打开 Internet Explorer                       | 🈚️       |
+| [PixaiTaggerOnnxGui](https://github.com/wai55555/PixaiTaggerOnnxGui) | pixai-tagger-onnx-gui        | 基于 Pixai Tagger ONNX 的本地图像自动打 Danbooru 标签 GUI 工具                        | ✔       |
 | [Pomotroid](https://github.com/splode/pomotroid)             | pomotroid                    | 简单易用的番茄钟计时器                                       | ❌       |
 | [PowerRun](https://www.sordum.org/9416/)                     | powerrun                     | TrustedInstaller/NT Authority/系统相同的权限运行 regedit.exe、Cmd.exe 或其他软件 | ✔       |
 | [pyTranscriber](https://pytranscriber.github.io/)            | pytranscriber                | 通过友好的图形用户界面，为音频/视频文件自动生成转录/字幕     | ❌       |
