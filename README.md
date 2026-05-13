@@ -70,6 +70,7 @@ scoop install rojem/<manifest>
 | [Pomotroid](https://github.com/splode/pomotroid)             | pomotroid                    | 简单易用的番茄钟计时器                                       | ❌       |
 | [PowerRun](https://www.sordum.org/9416/)                     | powerrun                     | TrustedInstaller/NT Authority/系统相同的权限运行 regedit.exe、Cmd.exe 或其他软件 | ✔       |
 | [pyTranscriber](https://pytranscriber.github.io/)            | pytranscriber                | 通过友好的图形用户界面，为音频/视频文件自动生成转录/字幕     | ❌       |
+| [rScoop](https://github.com/AmarBego/Rscoop)                | rscoop                       | A modern, efficient desktop GUI for Scoop, search, install, update and manage Windows packages without touching the terminal. | 🈚️       |
 | [scoop-search-multisource](https://github.com/plicit/scoop-search-multisource) | scoop-search-multisource     | 默认情况下搜索本地Scoop活动存储桶和远程 Rasa HTML scoop目录  | ❌       |
 | [Send Windows Key](https://www.sordum.org/12894/)            | send-windows-key             | 通过命令行发送Windows按键                                    | 🈚️       |
 | [Skip UAC Prompt](https://www.sordum.org/16219/)             | skip-uac-prompt              | 为选定的应用程序启用或禁用 UAC，而无需完全禁用系统范围内的 UAC | ✔       |
