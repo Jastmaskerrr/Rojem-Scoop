@@ -1,13 +1,13 @@
 {
-    "version": "1.16.2",
+    "version": "1.17.0",
     "description": "A DLL hijack implements Chrome full portability as well as tab enhancements.",
     "homepage": "https://github.com/Bush2021/chrome_plus",
     "license": "GPL-3.0-only",
     "notes": "This package provides the portable host environment.",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Bush2021/chrome_plus/releases/download/1.16.2/Chrome++_v1.16.2_x86_x64_arm64.7z",
-            "hash": "9ae286bd9efaa8c7ddb791da8c4d2625c37aa14eb8c94821dc1bdfd85b85cc36",
+            "url": "https://github.com/Bush2021/chrome_plus/releases/download/1.17.0/Chrome++_v1.17.0_x86_x64_arm64.7z",
+            "hash": "67c741872e64dbeeb8019efabe9712b70e11c3f3b6366ad97776922c18ef7b9b",
             "installer": {
                 "script": [
                     "Remove-Item \"$dir\\x86\", \"$dir\\arm64\" -Recurse -Force",
@@ -18,8 +18,8 @@
             }
         },
         "32bit": {
-            "url": "https://github.com/Bush2021/chrome_plus/releases/download/1.16.2/Chrome++_v1.16.2_x86_x64_arm64.7z",
-            "hash": "9ae286bd9efaa8c7ddb791da8c4d2625c37aa14eb8c94821dc1bdfd85b85cc36",
+            "url": "https://github.com/Bush2021/chrome_plus/releases/download/1.17.0/Chrome++_v1.17.0_x86_x64_arm64.7z",
+            "hash": "67c741872e64dbeeb8019efabe9712b70e11c3f3b6366ad97776922c18ef7b9b",
             "installer": {
                 "script": [
                     "Remove-Item \"$dir\\x64\", \"$dir\\arm64\" -Recurse -Force",
@@ -30,8 +30,8 @@
             }
         },
         "arm64": {
-            "url": "https://github.com/Bush2021/chrome_plus/releases/download/1.16.2/Chrome++_v1.16.2_x86_x64_arm64.7z",
-            "hash": "9ae286bd9efaa8c7ddb791da8c4d2625c37aa14eb8c94821dc1bdfd85b85cc36",
+            "url": "https://github.com/Bush2021/chrome_plus/releases/download/1.17.0/Chrome++_v1.17.0_x86_x64_arm64.7z",
+            "hash": "67c741872e64dbeeb8019efabe9712b70e11c3f3b6366ad97776922c18ef7b9b",
             "installer": {
                 "script": [
                     "Remove-Item \"$dir\\x64\", \"$dir\\x86\" -Recurse -Force",
