@@ -20,7 +20,14 @@
                 "script": [
                     "$TCDir = $(appdir totalcommander $global)",
                     "if (Test-Path \"$TCDir\\current\") {",
-                    "    Copy-Item \"$dir\\tc7z64.dll\" \"$TCDir\\current\" -Force",
+                    "    Start-Sleep -Milliseconds 500",
+                    "    try {",
+                    "        Copy-Item \"$dir\\tc7z64.dll\" \"$TCDir\\current\" -Force -ErrorAction Stop",
+                    "    } catch {",
+                    "        Write-Warning \"First copy attempt failed: $_. Retrying in 2 seconds...\"",
+                    "        Start-Sleep -Seconds 2",
+                    "        Copy-Item \"$dir\\tc7z64.dll\" \"$TCDir\\current\" -Force",
+                    "    }",
                     "} else {",
                     "    Write-Warning \"Total Commander (scoop) not found. Skipped injection.\"",
                     "}"
@@ -34,7 +41,14 @@
                 "script": [
                     "$TCDir = $(appdir totalcommander $global)",
                     "if (Test-Path \"$TCDir\\current\") {",
-                    "    Copy-Item \"$dir\\tc7z.dll\" \"$TCDir\\current\" -Force",
+                    "    Start-Sleep -Milliseconds 500",
+                    "    try {",
+                    "        Copy-Item \"$dir\\tc7z.dll\" \"$TCDir\\current\" -Force -ErrorAction Stop",
+                    "    } catch {",
+                    "        Write-Warning \"First copy attempt failed: $_. Retrying in 2 seconds...\"",
+                    "        Start-Sleep -Seconds 2",
+                    "        Copy-Item \"$dir\\tc7z.dll\" \"$TCDir\\current\" -Force",
+                    "    }",
                     "} else {",
                     "    Write-Warning \"Total Commander (scoop) not found. Skipped injection.\"",
                     "}"
@@ -48,7 +62,14 @@
                 "script": [
                     "$TCDir = $(appdir totalcommander $global)",
                     "if (Test-Path \"$TCDir\\current\") {",
-                    "    Copy-Item \"$dir\\tc7zarm64.dll\" \"$TCDir\\current\" -Force",
+                    "    Start-Sleep -Milliseconds 500",
+                    "    try {",
+                    "        Copy-Item \"$dir\\tc7zarm64.dll\" \"$TCDir\\current\" -Force -ErrorAction Stop",
+                    "    } catch {",
+                    "        Write-Warning \"First copy attempt failed: $_. Retrying in 2 seconds...\"",
+                    "        Start-Sleep -Seconds 2",
+                    "        Copy-Item \"$dir\\tc7zarm64.dll\" \"$TCDir\\current\" -Force",
+                    "    }",
                     "} else {",
                     "    Write-Warning \"Total Commander (scoop) not found. Skipped injection.\"",
                     "}"

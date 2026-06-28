@@ -31,10 +31,6 @@
     ],
     "shortcuts": [
         [
-            "7-zip.chm",
-            "7-Zip-Zstandard\\7-Zip Help"
-        ],
-        [
             "7zFM.exe",
             "7-Zip-Zstandard\\7-Zip ZS File Manager"
         ]
