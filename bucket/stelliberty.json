@@ -1,16 +1,16 @@
 {
-    "version": "1.2.290",
+    "version": "2.0.1",
     "description": "A modern client built with Flutter and Rust, powered by Mihomo (Clash Meta).",
     "homepage": "https://github.com/Kindness-Kismet/Stelliberty",
     "license": "Stelliberty License",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Kindness-Kismet/Stelliberty/releases/download/v1.2.290/Stelliberty-v1.2.290-windows-x64.zip",
-            "hash": "d8d4e0e3915f55a3d8953ad1e29e49e4762998fda1df58d059b98af4695e3242"
+            "url": "https://github.com/Kindness-Kismet/Stelliberty/releases/download/v2.0.1/stelliberty-v2.0.1-win-x64.zip",
+            "hash": "67c5e37722c0730bedd444d615e5500583c94e5be35b955a077423dc73ee2d68"
         },
         "arm64": {
-            "url": "https://github.com/Kindness-Kismet/Stelliberty/releases/download/v1.2.290/Stelliberty-v1.2.290-windows-arm64.zip",
-            "hash": "c750d30254cdab9b9506231204c9a1863cf680d4ba0f01f4fdffbe2566f7cce2"
+            "url": "https://github.com/Kindness-Kismet/Stelliberty/releases/download/v2.0.1/stelliberty-v2.0.1-win-arm64.zip",
+            "hash": "67c8e7ef757db9d0f8bd818d5423d81f49fb1f50eeb3bd39e5997a7f9031831e"
         }
     },
     "bin": "stelliberty.exe",
@@ -20,15 +20,21 @@
             "Stelliberty"
         ]
     ],
-    "persist": "data",
+    "pre_install": "if (!(Test-Path \"$persist_dir\\data\\settings.json\")) { New-Item -ItemType File -Path \"$dir\\data\\settings.json\" -Force | Out-Null }",
+    "persist": [
+        "data/icon-cache",
+        "data/proxies",
+        "data/subscriptions",
+        "data/settings.json"
+    ],
     "checkver": "github",
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/Kindness-Kismet/Stelliberty/releases/download/v$version/Stelliberty-v$version-windows-x64.zip"
+                "url": "https://github.com/Kindness-Kismet/Stelliberty/releases/download/v$version/stelliberty-v$version-win-x64.zip"
             },
             "arm64": {
-                "url": "https://github.com/Kindness-Kismet/Stelliberty/releases/download/v$version/Stelliberty-v$version-windows-arm64.zip"
+                "url": "https://github.com/Kindness-Kismet/Stelliberty/releases/download/v$version/stelliberty-v$version-win-arm64.zip"
             }
         }
     }
