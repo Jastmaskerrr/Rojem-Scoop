@@ -1,5 +1,5 @@
 {
-    "version": "1.8",
+    "version": "1.9",
     "description": "PowerRun is a portable freeware to launch regedit.exe , Cmd.exe or other software with the same privileges as the TrustedInstaller / Nt Authority/system.",
     "homepage": "https://www.sordum.org/9416/",
     "license": {
@@ -7,7 +7,7 @@
         "url": "https://www.sordum.org/eula/"
     },
     "url": "https://www.sordum.org/files/downloads.php?power-run#/dl.zip",
-    "hash": "e4f9d73e732636fce62e34813597df5a0bb5fa347c4d341203671e0119d5a237",
+    "hash": "2423e41ee0c3eda756628389449552232dfe23a4bf2e2f36e2a1095dcb9f5dae",
     "extract_dir": "PowerRun",
     "architecture": {
         "64bit": {
