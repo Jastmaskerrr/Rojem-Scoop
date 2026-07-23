@@ -59,6 +59,7 @@ scoop install rojem/<manifest>
 | [GPUSwitch](https://github.com/JasonHu051219/GPUSwitch)      | gpuswitch                    | GPUSwitch (GPUS) - Windows 显卡切换程序。是一款为 Windows 10/11 用户设计的轻量级显卡首选项管理工具。通过“进程监听 + 动态重启”的技术方案，解决了双显卡笔记本电脑显卡切换繁琐的痛点。 | 🈚️       |
 | [Iceweasel](https://sourceforge.net/projects/libportable/)   | iceweasel                    | 便携版Firefox                                                | ✔       |
 | [Imagine](https://www.nyam.pe.kr/dev/imagine/)               | imagine                      | 快速、紧凑的图像和动画查看器。可以作为独立应用程序使用，也可以作为 [Total Commander](https://www.ghisler.com/) 的 Lister 插件集成 | ✔       |
+| [Immich-Go GUI](https://github.com/shitan198u/immich-go-gui) | immich-go-gui                | Immich-Go GUI 是一个用于将照片和视频上传、迁移和备份到 Immich 的跨平台桌面应用程序。 | ❌       |
 | [KeywordGacha](https://github.com/neavo/KeywordGacha)        | keywordgacha                 | 使用 AI 能力一键分析 小说、游戏、字幕 等文本内容并生成术语表的次世代翻译辅助工具 | ✔       |
 | [LinguaGacha](https://github.com/neavo/LinguaGacha)          | linguagacha                  | 使用 AI 能力一键翻译 小说、游戏、字幕 等文本内容的次世代文本翻译器 | ✔       |
 | [locale-remulator](https://github.com/InWILL/Locale_Remulator) | locale-remulator             | 系统区域和语言模拟器                                         | ✔       |
