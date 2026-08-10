@@ -1,16 +1,16 @@
 <div align="center">
-    <h1 align="center">✨<a href="https://github.com/Jastmaskerrr/Rojem-Scoop/">Rojem-Scoop</a>✨</h1>
+    <h1 align="center">✨<a href="https://github.com/Myraxion/Rojem-Scoop/">Rojem-Scoop</a>✨</h1>
     <p align="center">
         一个专注于复杂软件便携化（Portable）整合与自动化维护的 Scoop 个人仓库。核心特色是通过高级脚本逻辑（如 Installer/Post-install 钩子）实现软件间的目录融合、环境隔离与依赖管理。
 </div>
 
 
 <p align="center">
-    <a href="https://github.com/Jastmaskerrr/Rojem-Scoop">
-        <img src="https://img.shields.io/github/stars/Jastmaskerrr/Rojem-Scoop" alt="github stars" />
+    <a href="https://github.com/Myraxion/Rojem-Scoop">
+        <img src="https://img.shields.io/github/stars/Myraxion/Rojem-Scoop" alt="github stars" />
     </a>
-    <a href="https://github.com/Jastmaskerrr/Rojem-Scoop">
-        <img src="https://img.shields.io/github/created-at/Jastmaskerrr/Rojem-Scoop" alt="created" />
+    <a href="https://github.com/Myraxion/Rojem-Scoop">
+        <img src="https://img.shields.io/github/created-at/Myraxion/Rojem-Scoop" alt="created" />
     </a>
 </p>
 
@@ -20,7 +20,7 @@
 确保你已经有 Scoop 环境，执行以下命令订阅本软件仓库:
 
 ```pwsh
-scoop bucket add rojem https://github.com/Jastmaskerrr/Rojem-Scoop
+scoop bucket add rojem https://github.com/Myraxion/Rojem-Scoop
 ```
 
 执行以下命令安装本仓库中的软件:
@@ -91,7 +91,7 @@ scoop install rojem/<manifest>
 
 **1. 我想要某个软件，这个仓库里没有！**
 
-开 [issue](https://github.com/tldro/scoop-security/issues?q=sort%3Aupdated-desc+is%3Aissue+is%3Aopen)，描述你的需求。
+开 issue，描述你的需求。
 
 **2. 仓库中的某个软件版本落后了，求更新！**
 
