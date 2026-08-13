@@ -21,9 +21,7 @@
         "Start-Sleep -Milliseconds 250",
         "Get-Process | Where-Object { $_.Name -eq 'LREditor' } | ForEach-Object { Stop-Process -Id $_.Id } 2>&1 | Out-Null"
     ],
-    "post_install": [
-        "Start-Process \"$dir\\LRInstaller.exe\""
-    ],
+    "post_install": "Start-Process \"$dir\\LRInstaller.exe\"",
     "bin": "LRProc.exe",
     "shortcuts": [
         [
