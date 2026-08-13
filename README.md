@@ -68,7 +68,7 @@ scoop install rojem/<manifest>
 | [mouse jiggler](https://github.com/arkane-systems/mousejiggler) | mouse-jiggler                | “模拟”鼠标输入来回抖动                                       | 🈚️       |
 | [Neokikoeru](https://github.com/vscodev/neokikoeru)          | neokikoeru                   | 基于云存储的 DLsite 音声作品管理和媒体播放软件               | ❌       |
 | [OliveTin](https://www.olivetin.app/)                        | olivetin                     | OliveTin 提供通过网络界面安全且简单地访问预定义的 shell 命令。 | ✔       |
-| [Open Internet Explorer](https://github.com/AigioL/OpenInternetExplorer) | open-Internet-explorer       | 在 Windows 11 中打开 Internet Explorer                       | 🈚️       |
+| [Open Internet Explorer](https://github.com/AigioL/OpenInternetExplorer) | open-internet-explorer       | 在 Windows 11 中打开 Internet Explorer                       | 🈚️       |
 | [OpenLogi](https://github.com/AprilNEA/OpenLogi)             | openlogi                     | 基于 Rust 的原生本地罗技 (Logitech Options+) 替代工具，支持 HID++ 按键重映射、DPI 与 SmartShift 设置 | 🈚️       |
 | [PixaiTaggerOnnxGui](https://github.com/wai55555/PixaiTaggerOnnxGui) | pixai-tagger-onnx-gui        | 基于 Pixai Tagger ONNX 的本地图像自动打 Danbooru 标签 GUI 工具 | ✔       |
 | [Pomotroid](https://github.com/splode/pomotroid)             | pomotroid                    | 简单易用的番茄钟计时器                                       | ❌       |
