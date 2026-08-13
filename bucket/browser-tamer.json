@@ -3,6 +3,7 @@
     "description": "Browser proxy for Windows with autodetection, rules, scripting",
     "homepage": "https://github.com/aloneguid/bt",
     "license": "Apache-2.0",
+    "extract_dir": "LocalApp\\BrowserTamer",
     "architecture": {
         "64bit": {
             "url": "https://github.com/aloneguid/bt/releases/download/6.1.1/BrowserTamer-6.1.1-win64.msi",
@@ -13,7 +14,6 @@
             "hash": "7c67ce6f583e05823ccf838a4bbe52d4370f2850b89886dfd788a99b6e9484fb"
         }
     },
-    "post_install": "if (Test-Path \"$dir\\CM_FP_bt.exe\") { Rename-Item \"$dir\\CM_FP_bt.exe\" \"$dir\\bt.exe\" }",
     "bin": "bt.exe",
     "shortcuts": [
         [
