@@ -82,7 +82,7 @@ scoop install rojem/<manifest>
 | [Traynard](https://github.com/tabris17/traynard)             | traynard                     | 将任意应用窗口最小化到系统托盘                               | ✔       |
 | [Tremotesf 2](https://github.com/equeim/tremotesf2)          | tremotesf                    | Bittorrent 客户端 [Transmission](https://transmissionbt.com/) 的GUI | ❌       |
 | [uLister](https://github.com/evgen0xb/uLister)               | ulister                      | Total Commander Lister plugin,uLister is a powerful document viewer which can open more than 500 file formats. | 🈚️       |
-| [WhoShitsonMyC](https://github.com/Kami958/WhoShitsonMyC)     | whoshitsonmyc                | 磁盘空间变化对比轻量小工具                                   | 🈚️       |
+| [WhoShitsonMyC](https://github.com/Kami958/WhoShitsonMyC)     | whoshitsonmyc                | 磁盘空间变化对比轻量小工具                                   | ❌       |
 | [wx_key](https://github.com/ycccccccy/wx_key/)               | wx-key                       | 获取[微信](https://weixin.qq.com/)4.0版本以上数据库密钥和图片密钥的工具 | ✔       |
 | [XiaoYao_QuickJump](https://github.com/lch319/XiaoYao_QuickJump) | xiaoyao-quickjump            | 在打开或保存对话框中，快速跳转到当前 资源管理器/TC/DO/XY/Q-Dir中打开的文件夹路径 | ✔       |
 
