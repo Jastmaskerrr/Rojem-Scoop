@@ -19,6 +19,14 @@ globs: bucket/*.json
 - **推荐添加字段**：
   - GUI 应用程序 SHOULD 添加 `shortcuts` 字段。
   - 需要持久化用户数据或配置的应用 SHOULD 添加 `persist` 字段。
+- **持久化动态文件初始化 (MUST)**：当 `persist` 包含的文件在原始安装包中不存在（运行时生成）时，MUST 在 `pre_install` 钩子中预先在 `$persist_dir` 下建立空文件或目录（务必包含 `-Force` 以便自动建文件夹）。标准参考逻辑：
+  ```json
+  "pre_install": [
+      "if (!(Test-Path \"$persist_dir\\config.json\") -or !(Get-Item \"$persist_dir\\config.json\").Length) {",
+      "    New-Item \"$persist_dir\\config.json\" -ItemType File -Force -ErrorAction SilentlyContinue | Out-Null",
+      "}"
+  ]
+  ```
 - **高级字段（可选）**：
   - `installer.script`: 用于非标准安装流程的补丁逻辑。
   - `suggest`: 关联包提示。

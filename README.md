@@ -42,8 +42,12 @@ scoop install rojem/<manifest>
 | [Apollo Profile Manager](https://github.com/ClassicOldSong/ApolloProfileManager) | apollo-profile-manager       | 管理和自动交换 [Apollo ](https://github.com/ClassicOldSong/Apollo)不同客户端之间的游戏配置文件、存档文件、模组集和其他用户数据的工具 | ✔       |
 | [AutoHotkey_H](https://github.com/thqby/AutoHotkey_H)        | autohotkey-h                 | 一个具有多线程等附加功能的[AHK V2](https://www.autohotkey.com/v2/)分支 | 🈚️       |
 | [AutoHotkey v1](https://www.autohotkey.com)                  | autohotkey1                  | [AHK v1](https://www.autohotkey.com/download/1.1/)版，与`main`中的AHK共存 | 🈚️       |
+| [AvPlay](https://github.com/anonymousjav/AvPlayRelease)     | avplay                       | 一款美观优雅的跨平台JAV播放器                               | ❌       |
 | [BilibiliHistoryFetcher](https://github.com/LifeArchiveProject/BilibiliHistoryFetcher) | bilibili-history-fetcher     | 获取b站历史记录，一键下载用户所有的视频，动态，收藏夹，找回14天内b站在屏幕上显示过的图片，生成详细的年度总结，自动化任务 | ✔       |
 | [BiliHistoryFrontend](https://github.com/LifeArchiveProject/BiliHistoryFrontend) | bilibili-history-frontend    | 基于 Vue 3 开发的 B 站历史记录分析工具的前端项目，为用户提供丰富的 B 站观看历史数据分析功能。 | ❌       |
+| [BingWallpaper](https://github.com/jadepeng/bing-wallpaper)  | bing-wallpaper               | Bing每日壁纸，自动获取Bing的精美图片设置为壁纸，并且支持随机切换历史壁纸，查看壁纸故事 | ✔       |
+| [BlueGauge](https://github.com/iKineticate/BlueGauge)        | bluegauge                    | 轻松查看蓝牙设备电池电量的轻便托盘工具                       | ✔       |
+| [BossKey](https://gitee.com/qiubin200236/boss-key)          | boss-key                     | 基于 C# 开发的老板键软件，支持按键/鼠标快捷键隐藏指定窗口与进程 | ✔       |
 | [CaesiumCLT](https://saerasoft.com/caesiumclt/)              | caesium-clt                  | Caesium命令行工具 - 有损/无损图像压缩工具                    | 🈚️       |
 | [CefFlashBrowser](https://github.com/Mzying2001/CefFlashBrowser) | cefflashbrowser              | 自带 Flash Player 插件的浏览器，可以正常显示网页上的 Flash 内容，此外还支持打开本地 SWF 文件，管理 Flash 游戏存档等。 | ✔       |
 | [Chrome](https://github.com/Bush2021/chrome_installer)       | chrome-core                  | 自动抓取 [Google Chrome](https://www.google.com/chrome/) 官方离线安装包，并将其二进制文件无缝注入至 `chrome-plus` 的宿主目录中 | 🈚️       |

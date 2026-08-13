@@ -48,6 +48,14 @@
 - MUST 包含 `checkver` 和 `autoupdate`（保证自动更新能力）
 - SHOULD 为 GUI 应用添加 `shortcuts` 字段
 - SHOULD 为需要持久化数据的应用添加 `persist` 字段
+- 持久化动态文件初始化（MUST）：当 `persist` 包含的文件在原始安装包中不存在（仅在首次运行后才生成）时，MUST 在 `pre_install` 钩子中预先在 `$persist_dir` 下建立空文件或目录（需带 `-Force` 以确保自动创建父级目录），以确保 Scoop 软链接正常工作。示例：
+  ```json
+  "pre_install": [
+      "if (!(Test-Path \"$persist_dir\\config.json\") -or !(Get-Item \"$persist_dir\\config.json\").Length) {",
+      "    New-Item \"$persist_dir\\config.json\" -ItemType File -Force -ErrorAction SilentlyContinue | Out-Null",
+      "}"
+  ]
+  ```
 - 字段详细说明参考 `docs/scoop-wiki/App-Manifests.md`
 - 自动更新配置参考 `docs/scoop-wiki/App-Manifest-Autoupdate.md`
 - 安装脚本可用变量参考 `docs/scoop-wiki/Pre-Post-(un)install-scripts.md`
@@ -61,12 +69,14 @@
 ### 修改代码前
 
 1. 阅读任务涉及的清单文件和相关脚本
-2. 确认工作分支基于最新远程主分支
-3. 确认不在已关闭 PR 的废弃分支上工作
+2. 解压或分析应用安装包文件结构，猜测判断可能需要持久化的文件或目录，确认 `persist` 目标文件是否存在。若为运行后动态生成的配置文件，提前规划 `pre_install` 建立空文件逻辑
+3. 在将清单正式添加进 bucket 前，向用户列出拟定的各 Scoop Manifest 字段内容，供用户确认无误后再写入文件
+4. 确认工作分支基于最新远程主分支
+5. 确认不在已关闭 PR 的废弃分支上工作
 
 ### 小型修改（单个清单的新增/更新）
 
-1. 直接实施，修改后运行验证。
+1. 在获得用户对清单内容的确认后，执行文件写入，并在完成后运行验证。
 2. 添加更新清单时，给 README.md 在应用列表中添加新清单。
 
 ### 中型修改（多个清单或脚本联动）
