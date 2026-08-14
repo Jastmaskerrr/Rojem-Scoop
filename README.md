@@ -55,6 +55,7 @@ scoop install rojem/<manifest>
 | [CefFlashBrowser](https://github.com/Mzying2001/CefFlashBrowser) | cefflashbrowser              | 自带 Flash Player 插件的浏览器，可以正常显示网页上的 Flash 内容，此外还支持打开本地 SWF 文件，管理 Flash 游戏存档等。 | ✔       |
 | [Chrome](https://github.com/Bush2021/chrome_installer)       | chrome-core                  | 自动抓取 [Google Chrome](https://www.google.com/chrome/) 官方离线安装包，并将其二进制文件无缝注入至 `chrome-plus` 的宿主目录中 | 🈚️       |
 | [Chrome++ Next](https://github.com/Bush2021/chrome_plus/)    | chrome-plus                  | [Chrome](https://www.google.com/chrome/) 的便携化宿主环境，DLL劫持实现了Chrome浏览器的完全可移植性以及标签页增强功能 | ✔       |
+| [ComicGUISpider](https://cgs.101114105.xyz)                  | comicguispider               | 跨平台漫画/本子下载 GUI，支持拷贝漫画、Māngabz、漫画柜、动漫屋、禁漫天堂、wnacg、exhentai、nhentai、hitomi.la、kemono、danbooru 等众多站点 | ❌       |
 | [Context Menu Manager](https://github.com/Jack251970/ContextMenuManager) | context-menu-manager         | 一个管理 Windows 右键上下文菜单的程序                        | ✔       |
 | [CudaLister](https://github.com/Alexey-T/CudaLister/)        | cudalister                   | 基于 ATSynEdit 的 Total Commander Lister 插件                | 🈚️       |
 | [Digital Clock](https://sourceforge.net/projects/digitalclock4/) | digital-clock-5              | 一款美观的可定制时钟，支持插件功能                           | ✔       |
