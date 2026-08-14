@@ -50,6 +50,8 @@ scoop install rojem/<manifest>
 | [BossKey](https://gitee.com/qiubin200236/boss-key)          | boss-key                     | 基于 C# 开发的老板键软件，支持按键/鼠标快捷键隐藏指定窗口与进程 | ✔       |
 | [Browser Tamer](https://github.com/aloneguid/bt)             | browser-tamer                | 一款支持自动检测浏览器、代理规则与脚本配置的 Windows 浏览器代理路由工具 | ❌       |
 | [CaesiumCLT](https://saerasoft.com/caesiumclt/)              | caesium-clt                  | Caesium命令行工具 - 有损/无损图像压缩工具                    | 🈚️       |
+| [CBconvert](https://github.com/gen2brain/cbconvert)          | cbconvert                    | 漫画格式转换与重采样工具，支持 CBR、CBZ、PDF 等多种格式转换与调整 (标准版) | 🈚️       |
+| [CBconvert WinUI](https://github.com/gen2brain/cbconvert)    | cbconvert-winui              | 漫画格式转换与重采样工具，支持 CBR、CBZ、PDF 等多种格式转换与调整 (WinUI 现代版) | 🈚️       |
 | [CefFlashBrowser](https://github.com/Mzying2001/CefFlashBrowser) | cefflashbrowser              | 自带 Flash Player 插件的浏览器，可以正常显示网页上的 Flash 内容，此外还支持打开本地 SWF 文件，管理 Flash 游戏存档等。 | ✔       |
 | [Chrome](https://github.com/Bush2021/chrome_installer)       | chrome-core                  | 自动抓取 [Google Chrome](https://www.google.com/chrome/) 官方离线安装包，并将其二进制文件无缝注入至 `chrome-plus` 的宿主目录中 | 🈚️       |
 | [Chrome++ Next](https://github.com/Bush2021/chrome_plus/)    | chrome-plus                  | [Chrome](https://www.google.com/chrome/) 的便携化宿主环境，DLL劫持实现了Chrome浏览器的完全可移植性以及标签页增强功能 | ✔       |
