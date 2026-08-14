@@ -57,6 +57,7 @@ scoop install rojem/<manifest>
 | [Digital Clock](https://sourceforge.net/projects/digitalclock4/) | digital-clock-5              | 一款美观的可定制时钟，支持插件功能                           | ✔       |
 | [Discord](https://portapps.io/app/discord-portable/)         | discord                      | 便携版Discord客户端，并持久化[BetterDiscord](https://mwittrien.github.io/)插件 | ✔       |
 | [echotrace](https://github.com/ycccccccy/echotrace)          | echotrace                    | 一个本地、安全的[微信](https://weixin.qq.com/)聊天记录导出、分析与年度报告生成工具 | ✔       |
+| [EPUB Metadata Editor](https://github.com/benchen71/epub-metadata-editor) | epub-metadata-editor         | 编辑 EPUB 电子书元数据的图形化工具 | ❌       |
 | [ExHyperV](https://github.com/Justsenger/ExHyperV)           | exhyperv                     | 一款提供高级HyperV虚拟机功能的图形用户界面软件，例如DDA和GPU-PV。 | ✔       |
 | [ExifTool](https://exiftool.org/)                            | exiftool                     | 一个用于读取、写入和编辑各种文件元信息的命令行应用程序。如果检测  [Total Commander](https://www.ghisler.com/) ，将可执行文件复制到 [ExifToolView](totalcmd.net/plugring/exiftoolview.html) 插件目录内 | 🈚️       |
 | [FFmpeg Builds for yt-dlp](https://github.com/yt-dlp/FFmpeg-Builds) | ffmpeg-shared-yt-dlp-nightly | 适用于 yt-dlp 的 FFmpeg 构建，特意去除了生成shims，防止与官方 [FFmpeg](https://ffmpeg.org) 冲突 | 🈚️       |
