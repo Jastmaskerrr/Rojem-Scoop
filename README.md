@@ -4,7 +4,6 @@
         一个专注于复杂软件便携化（Portable）整合与自动化维护的 Scoop 个人仓库。核心特色是通过高级脚本逻辑（如 Installer/Post-install 钩子）实现软件间的目录融合、环境隔离与依赖管理。
 </div>
 
-
 <p align="center">
     <a href="https://github.com/Myraxion/Rojem-Scoop">
         <img src="https://img.shields.io/github/stars/Myraxion/Rojem-Scoop" alt="github stars" />
@@ -13,7 +12,6 @@
         <img src="https://img.shields.io/github/created-at/Myraxion/Rojem-Scoop" alt="created" />
     </a>
 </p>
-
 
 ## 订阅Bucket
 
@@ -25,11 +23,9 @@ scoop bucket add rojem https://github.com/Myraxion/Rojem-Scoop
 
 执行以下命令安装本仓库中的软件:
 
-```
+```pwsh
 scoop install rojem/<manifest>
 ```
-
-
 
 ## 应用列表
 
@@ -39,7 +35,7 @@ scoop install rojem/<manifest>
 | [7-zip-zstd Codecs](https://github.com/mcmilk/7-Zip-zstd)    | 7zip-zstd-codecs             | 为`main` [7-Zip](https://www.7-zip.org/) 添加附加编解码器，包括`Zstandard`、`Brotli`、`Lz4`、`Lz5`和`Lizard` | 🈚️       |
 | [7-Zip-zstd TotalCmd](https://github.com/mcmilk/7-Zip-zstd)  | 7zip-zstd-totalcmd           | 替换 [Total Commander](https://www.ghisler.com/) 的`tc7z.dll` ，支持 [7-Zip](https://www.7-zip.org/) 的Zstandard（`Zstd`、`Brotli`、`Lz4`、`Lz5`、`Lizard`）格式 | 🈚️       |
 | [Ahk2Exe](https://github.com/AutoHotkey/Ahk2Exe/releases)    | ahk2exe                      | 官方的 [AutoHotkey](https://www.autohotkey.com/) 脚本编译器  | 🈚️       |
-| [Apollo Profile Manager](https://github.com/ClassicOldSong/ApolloProfileManager) | apollo-profile-manager       | 管理和自动交换 [Apollo ](https://github.com/ClassicOldSong/Apollo)不同客户端之间的游戏配置文件、存档文件、模组集和其他用户数据的工具 | ✔       |
+| [Apollo Profile Manager](https://github.com/ClassicOldSong/ApolloProfileManager) | apollo-profile-manager       | 管理和自动交换 [Apollo](https://github.com/ClassicOldSong/Apollo)不同客户端之间的游戏配置文件、存档文件、模组集和其他用户数据的工具 | ✔       |
 | [AutoHotkey_H](https://github.com/thqby/AutoHotkey_H)        | autohotkey-h                 | 一个具有多线程等附加功能的[AHK V2](https://www.autohotkey.com/v2/)分支 | 🈚️       |
 | [AutoHotkey v1](https://www.autohotkey.com)                  | autohotkey1                  | [AHK v1](https://www.autohotkey.com/download/1.1/)版，与`main`中的AHK共存 | 🈚️       |
 | [AvPlay](https://github.com/anonymousjav/AvPlayRelease)     | avplay                       | 一款美观优雅的跨平台JAV播放器                               | ❌       |
@@ -94,7 +90,7 @@ scoop install rojem/<manifest>
 | [wx_key](https://github.com/ycccccccy/wx_key/)               | wx-key                       | 获取[微信](https://weixin.qq.com/)4.0版本以上数据库密钥和图片密钥的工具 | ✔       |
 | [XiaoYao_QuickJump](https://github.com/lch319/XiaoYao_QuickJump) | xiaoyao-quickjump            | 在打开或保存对话框中，快速跳转到当前 资源管理器/TC/DO/XY/Q-Dir中打开的文件夹路径 | ✔       |
 
-
+> **Persist 列说明**：`✔` = Scoop 可管理持久化数据；`❌` = 有持久化数据但 Scoop 无法管理（如存于 `AppData\Roaming`）；`🈚️` = 应用无需要持久化的数据。
 
 ## 疑问
 
@@ -105,4 +101,3 @@ scoop install rojem/<manifest>
 **2. 仓库中的某个软件版本落后了，求更新！**
 
 欢迎 Fork 本仓库，修改落后的软件清单，并提交你的拉取请求。
-
