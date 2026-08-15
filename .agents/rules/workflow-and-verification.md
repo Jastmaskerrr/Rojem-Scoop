@@ -67,7 +67,8 @@ description: 包含修改代码的工作流程、不同规模修改（小/中/�
 
 ### 运行环境要求
 
-> 运行上述 `.ps1` 验证脚本时，MUST 优先使用 **PowerShell 7（`pwsh`）**，而非 Windows PowerShell 5.1。
+- 当前环境默认已是 **PowerShell 7（`pwsh`）**，执行验证命令及日常工具时 **MUST 直接执行命令本身**（如直接运行 `.\bin\formatjson.ps1`）。
+- **MUST NOT** 在命令行前额外嵌套 `pwsh`、`pwsh -Command`、`pwsh -NoProfile` 或 `powershell` 等包装命令。
 
 ## 4. 决策原则
 
