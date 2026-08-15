@@ -63,6 +63,7 @@ scoop install rojem/<manifest>
 | [ExifTool](https://exiftool.org/)                            | exiftool                     | 一个用于读取、写入和编辑各种文件元信息的命令行应用程序。如果检测  [Total Commander](https://www.ghisler.com/) ，将可执行文件复制到 [ExifToolView](totalcmd.net/plugring/exiftoolview.html) 插件目录内 | 🈚️       |
 | [FancyStart](https://github.com/zyfzsi/fancyStart)           | fancystart                   | Windows 开机启动项管理工具，基于 WPF (.NET 8) 构建           | 🈚️       |
 | [FFmpeg Builds for yt-dlp](https://github.com/yt-dlp/FFmpeg-Builds) | ffmpeg-shared-yt-dlp-nightly | 适用于 yt-dlp 的 FFmpeg 构建，特意去除了生成shims，防止与官方 [FFmpeg](https://ffmpeg.org) 冲突 | 🈚️       |
+| [Flood](https://flood.js.org)                               | flood                        | 适用于各类 Torrent 客户端的现代 Web UI，基于 Node.js 后端与 React 前端构建 | ❌       |
 | [GPUSwitch](https://github.com/JasonHu051219/GPUSwitch)      | gpuswitch                    | GPUSwitch (GPUS) - Windows 显卡切换程序。是一款为 Windows 10/11 用户设计的轻量级显卡首选项管理工具。通过“进程监听 + 动态重启”的技术方案，解决了双显卡笔记本电脑显卡切换繁琐的痛点。 | 🈚️       |
 | [Iceweasel](https://sourceforge.net/projects/libportable/)   | iceweasel                    | 便携版Firefox                                                | ✔       |
 | [Imagine](https://www.nyam.pe.kr/dev/imagine/)               | imagine                      | 快速、紧凑的图像和动画查看器。可以作为独立应用程序使用，也可以作为 [Total Commander](https://www.ghisler.com/) 的 Lister 插件集成 | ✔       |
