@@ -9,7 +9,7 @@
 ```text
 .
 ├── bucket/              # 清单文件（唯一的清单存放位置）
-├── bin/                 # Scoop 官方工具脚本（checkver/formatjson/test 等）
+├── bin/                 # 仓库维护工具脚本（Scoop 官方工具及自定义维护脚本）
 ├── scripts/             # 清单辅助脚本（安装钩子引用的外部脚本）
 ├── deprecated/          # 已废弃的清单
 ├── docs/scoop-wiki/     # Scoop 官方 Wiki 镜像（只读参考）
@@ -20,7 +20,7 @@
 
 - `bucket/` 下只放 JSON 清单文件，MUST NOT 放脚本或其他文件
 - `scripts/` 存放被清单 `pre_install`/`post_install` 引用的外部脚本
-- `bin/` 是 Scoop 官方工具，MUST NOT 修改其内容
+- `bin/` 存放 Scoop 官方工具脚本与仓库自定义维护脚本
 
 ## 2. 开发规范
 
@@ -53,31 +53,41 @@
 - 自动更新配置参考 `docs/scoop-wiki/App-Manifest-Autoupdate.md`
 - 安装脚本可用变量参考 `docs/scoop-wiki/Pre-Post-(un)install-scripts.md`
 
-### README 编写规则
+### README 维护规则
 
-- 应用列表为 Markdown 表格，列为 `APP`、`Manifest`、`Description`、`Persist`
-  - `APP`：`[软件显示名](homepage)`，显示名用软件官方名称
-  - `Manifest`：清单文件名（不含 `.json` 后缀）
+新增或删除清单时，使用 `.\bin\formatreadme.ps1` 自动维护 `README.md` 应用表格（自动按字典序排序与对齐）。
+
+- **字段要求**：
+  - `Name`：软件官方显示名
   - `Description`：一句话中文简介
-  - `Persist`：`✔` = Scoop 可管理持久化数据（清单含 `persist` 字段）；`❌` = 有持久化数据但 Scoop 无法管理（存于 `AppData\Roaming` 等安装目录之外）；`🈚️` = 应用无需要持久化的数据
-- 应用按 `APP` 显示名字母顺序排序
-- 新增/删除清单时 MUST 同步更新应用列表
+  - `Persist` 状态取值：
+    - `Y`（`✔`）：Scoop 可管理持久化数据（清单含 `persist` 字段）
+    - `N`（`❌`）：有持久化数据但 Scoop 无法管理（存于 `AppData` 等安装目录外）
+    - `NA`（`🈚️`）：应用无需要持久化的数据
+- **常用命令**：
+
+  ```powershell
+  # 新增
+  .\bin\formatreadme.ps1 -Name "<显示名>" -Url "<主页>" -Manifest "<清单名>" -Description "<中文简介>" -Persist <Y|N|NA>
+  # 删除
+  .\bin\formatreadme.ps1 -Remove "<清单名>"
+  ```
 
 ## 3. 工作流程
 
 ### 修改代码前
 
-1. 阅读任务涉及的清单文件和相关脚本
-2. 分析安装包文件结构并结合开源项目源码的轻量静态检索（如 `APPDATA`、`SpecialFolder`、`BaseDirectory` 等路径读写逻辑），确认 `persist` 目标及 `Persist` 状态；若为动态生成文件，提前规划 `pre_install` 建立空文件逻辑
-3. 预先校验 `checkver` 配置，确保能准确匹配并提取到最新版本号
-4. 在将清单正式添加进 bucket 前，向用户列出拟定的各 Scoop Manifest 字段内容，供用户确认无误后再写入文件
-5. 确认工作分支基于最新远程主分支
-6. 确认不在已关闭 PR 的废弃分支上工作
+1. 确认工作分支基于最新远程主分支，且不在已关闭 PR 的废弃分支上工作
+2. 阅读任务涉及的清单文件和相关脚本
+3. 分析安装包文件结构并结合开源项目源码的轻量静态检索（如 `APPDATA`、`SpecialFolder`、`BaseDirectory` 等路径读写逻辑），确认 `persist` 目标及 `Persist` 状态；若为动态生成文件，提前规划 `pre_install` 建立空文件逻辑
+4. 预先校验 `checkver` 配置，确保能准确匹配并提取到最新版本号
+5. 在将清单正式添加进 bucket 前，向用户列出拟定的各 Scoop Manifest 字段内容，供用户确认无误后再写入文件
 
 ### 小型修改（单个清单的新增/更新）
 
-1. 在获得用户对清单内容的确认后，执行文件写入，并在完成后运行验证。
-2. 添加更新清单时，给 README.md 在应用列表中添加新清单。
+1. 用户确认拟定方案后，写入 `bucket/<manifest>.json` 清单文件
+2. 若涉及新增或删除清单，运行 `.\bin\formatreadme.ps1` 自动同步更新 `README.md` 应用表格
+3. 按照提交前要求统一执行格式化与测试验证
 
 ### 中型修改（多个清单或脚本联动）
 
@@ -91,40 +101,29 @@
 2. MUST NOT 直接大规模删改
 3. 分阶段实施，每阶段完成后验证
 
-### 提交前
+### 提交前（完成标准）
 
-1. 运行 `.\bin\formatjson.ps1` 统一 JSON 格式
-2. 运行 `.\bin\test.ps1` 确认测试通过
-3. 确认提交内容不包含敏感信息
+提交前 MUST 满足以下全部条件方可视为完成：
 
-### 创建 PR
-
-1. MUST 确认用户已要求创建 PR
-2. PR 正文 MUST 用中文完整描述当前状态（不含历史更新记录）
-3. 使用 `gh pr checks <PR ID> --watch` 等待 CI 通过
-4. 如果本地有 `request-review-copilot` 命令，请求 Copilot 审查并处理反馈
-5. 使用 `/code-review` 命令执行代码审查，处理评分 ≥ 50 的问题
+1. 运行 `.\bin\formatjson.ps1` 确保清单 JSON 格式正确且无报错
+2. 运行 `.\bin\test.ps1` 确保所有测试通过且无报错
+3. 没有修改与任务无关的文件，没有遗留临时代码或调试输出
+4. 确认提交内容不包含敏感信息
 
 ## 4. 验证规则
 
-### 完成标准
-
-任务只有满足以下全部条件才视为完成：
-
-- 清单 JSON 格式正确（`formatjson.ps1` 无报错）
-- 测试通过（`test.ps1` 无报错）
-- 没有修改与任务无关的文件
-- 没有遗留临时代码或调试输出
-- `README.md` 应用列表已同步更新（如涉及新增/删除清单）
-
-### 验证命令
+### 常用验证命令
 
 ```powershell
-.\bin\formatjson.ps1    # JSON 格式验证
-.\bin\test.ps1          # Pester 测试
-.\bin\checkver.ps1      # 版本检查
-.\bin\checkhashes.ps1   # 哈希验证
-.\bin\checkurls.ps1     # URL 可达性检查
+# 仓库自定义工具
+.\bin\formatreadme.ps1     # README 表格同步与格式化
+
+# Scoop 官方工具
+.\bin\formatjson.ps1       # JSON 格式验证
+.\bin\test.ps1             # Pester 测试
+.\bin\checkver.ps1         # 版本检查
+.\bin\checkhashes.ps1      # 哈希验证
+.\bin\checkurls.ps1        # URL 可达性检查
 ```
 
 ### 验证脚本运行环境
