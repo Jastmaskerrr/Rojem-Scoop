@@ -75,6 +75,7 @@ scoop install rojem/<manifest>
 | [imgbrd-grabber](https://www.bionus.org/imgbrd-grabber/)     | imgbrd-grabber               | 支持强大文件名定制功能的图像板（Imageboard/Booru）批量下载工具 | ✔       |
 | [Immich-Go GUI](https://github.com/shitan198u/immich-go-gui) | immich-go-gui                | Immich-Go GUI 是一个用于将照片和视频上传、迁移和备份到 Immich 的跨平台桌面应用程序。 | ❌       |
 | [Keep-Screen-WIN](https://github.com/Kindness-Kismet/Keep-Screen-WIN) | keep-screen                  | 一个极简的保持 Windows 屏幕常亮的小工具                      | 🈚️       |
+| [Keymap](https://github.com/cataerogong/keymap)             | keymap                       | 快捷键可视化与记录工具，支持托盘全局热键唤起                 | ✔       |
 | [KeywordGacha](https://github.com/neavo/KeywordGacha)        | keywordgacha                 | 使用 AI 能力一键分析 小说、游戏、字幕 等文本内容并生成术语表的次世代翻译辅助工具 | ✔       |
 | [LinguaGacha](https://github.com/neavo/LinguaGacha)          | linguagacha                  | 使用 AI 能力一键翻译 小说、游戏、字幕 等文本内容的次世代文本翻译器 | ✔       |
 | [locale-remulator](https://github.com/InWILL/Locale_Remulator) | locale-remulator             | 系统区域和语言模拟器                                         | ✔       |
@@ -92,6 +93,7 @@ scoop install rojem/<manifest>
 | [rScoop](https://github.com/AmarBego/Rscoop)                 | rscoop                       | A modern, efficient desktop GUI for Scoop, search, install, update and manage Windows packages without touching the terminal. | 🈚️       |
 | [scoop-search-multisource](https://github.com/plicit/scoop-search-multisource) | scoop-search-multisource     | 默认情况下搜索本地Scoop活动存储桶和远程 Rasa HTML scoop目录  | ❌       |
 | [Send Windows Key](https://www.sordum.org/12894/)            | send-windows-key             | 通过命令行发送Windows按键                                    | 🈚️       |
+| [Skills Manager](https://github.com/xingkongliang/skills-manager) | skills-manager               | AI Agent 技能（Skills）跨工具管理与同步工具                   | ❌       |
 | [Skip UAC Prompt](https://www.sordum.org/16219/)             | skip-uac-prompt              | 为选定的应用程序启用或禁用 UAC，而无需完全禁用系统范围内的 UAC | ✔       |
 | [Stelliberty](https://github.com/Kindness-Kismet/Stellibert) | stelliberty                  | 现代化 [Mihomo](https://github.com/MetaCubeX/mihomo) 客户端  | ✔       |
 | [Traynard](https://github.com/tabris17/traynard)             | traynard                     | 将任意应用窗口最小化到系统托盘                               | ✔       |
