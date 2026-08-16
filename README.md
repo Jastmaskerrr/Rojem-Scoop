@@ -74,6 +74,7 @@ scoop install rojem/<manifest>
 | [ImeSavior](https://github.com/cs0tony/ime-savior)           | ime-savior                   | Windows 11 第三方输入法救星，启动后自动触发触摸键盘以修复输入法首字母英文 Bug | 🈚️       |
 | [imgbrd-grabber](https://www.bionus.org/imgbrd-grabber/)     | imgbrd-grabber               | 支持强大文件名定制功能的图像板（Imageboard/Booru）批量下载工具 | ✔       |
 | [Immich-Go GUI](https://github.com/shitan198u/immich-go-gui) | immich-go-gui                | Immich-Go GUI 是一个用于将照片和视频上传、迁移和备份到 Immich 的跨平台桌面应用程序。 | ❌       |
+| [Keep-Screen-WIN](https://github.com/Kindness-Kismet/Keep-Screen-WIN) | keep-screen                  | 一个极简的保持 Windows 屏幕常亮的小工具                      | 🈚️       |
 | [KeywordGacha](https://github.com/neavo/KeywordGacha)        | keywordgacha                 | 使用 AI 能力一键分析 小说、游戏、字幕 等文本内容并生成术语表的次世代翻译辅助工具 | ✔       |
 | [LinguaGacha](https://github.com/neavo/LinguaGacha)          | linguagacha                  | 使用 AI 能力一键翻译 小说、游戏、字幕 等文本内容的次世代文本翻译器 | ✔       |
 | [locale-remulator](https://github.com/InWILL/Locale_Remulator) | locale-remulator             | 系统区域和语言模拟器                                         | ✔       |
