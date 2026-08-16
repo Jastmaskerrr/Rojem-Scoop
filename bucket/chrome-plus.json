@@ -3,7 +3,18 @@
     "description": "A DLL hijack implements Chrome full portability as well as tab enhancements.",
     "homepage": "https://github.com/Bush2021/chrome_plus",
     "license": "GPL-3.0-only",
-    "notes": "This package provides the portable host environment.",
+    "notes": [
+        "This package provides the portable host environment and enhancements for Google Chrome.",
+        "Install 'chrome-core' to inject the official Chrome binaries.",
+        "Chrome has been automatically registered in Windows App Paths for application discovery.",
+        "To support apps that hardcode the default Chrome path, create a LocalAppData junction by running:",
+        "  & '$dir\\link-localappdata.ps1'",
+        "To remove the junction:",
+        "  & '$dir\\unlink-localappdata.ps1'"
+    ],
+    "suggest": {
+        "Google Chrome Binaries": "rojem/chrome-core"
+    },
     "architecture": {
         "64bit": {
             "url": "https://github.com/Bush2021/chrome_plus/releases/download/1.18.2/Chrome++_v1.18.2_x86_x64_arm64.7z",
@@ -53,8 +64,26 @@
         "if (-not (Test-Path \"$dir\\App\\chrome++.ini\")) { Copy-Item \"$dir\\_temp\\App\\chrome++.ini\" \"$dir\\App\" }",
         "if (Test-Path \"$dir\\_temp\\Data\") { Copy-Item \"$dir\\_temp\\Data\" \"$dir\" -Recurse -ErrorAction SilentlyContinue }",
         "if (Test-Path \"$dir\\_temp\\Cache\") { Copy-Item \"$dir\\_temp\\Cache\" \"$dir\" -Recurse -ErrorAction SilentlyContinue }",
-        "Remove-Item \"$dir\\_temp\" -Recurse -Force"
+        "Remove-Item \"$dir\\_temp\" -Recurse -Force",
+        "Write-Host 'Registering Chrome in App Paths...' -ForegroundColor Cyan",
+        "$dirpath = \"$dir\\App\".Replace('\\', '\\\\')",
+        "$exepath = \"$dir\\App\\chrome.exe\".Replace('\\', '\\\\')",
+        "$regDir = (Resolve-Path \"$bucketsdir\\*\\scripts\\chrome-plus\" -ErrorAction SilentlyContinue | Select-Object -First 1).Path",
+        "if ($regDir) {",
+        "  'install-reg', 'uninstall-reg' | ForEach-Object {",
+        "    $content = Get-Content \"$regDir\\$_.reg\"",
+        "    $content = $content.Replace('$chromedir', $dirpath)",
+        "    $content = $content.Replace('$chrome', $exepath)",
+        "    if ($global) { $content = $content.Replace('HKEY_CURRENT_USER', 'HKEY_LOCAL_MACHINE') }",
+        "    $content | Set-Content -Path \"$dir\\$_.reg\"",
+        "  }",
+        "  reg import \"$dir\\install-reg.reg\"",
+        "  Copy-Item \"$regDir\\*-localappdata.ps1\" \"$dir\" -Force",
+        "}"
     ],
+    "uninstaller": {
+        "script": "if ($cmd -eq 'uninstall' -and (Test-Path \"$dir\\uninstall-reg.reg\")) { reg import \"$dir\\uninstall-reg.reg\" }"
+    },
     "bin": [
         [
             "App\\chrome.exe",
@@ -68,7 +97,9 @@
         ]
     ],
     "env_set": {
-        "CHROME_EXECUTABLE": "$dir\\App\\chrome.exe"
+        "CHROME_BIN": "$dir\\App\\chrome.exe",
+        "CHROME_EXECUTABLE": "$dir\\App\\chrome.exe",
+        "CHROME_PATH": "$dir\\App\\chrome.exe"
     },
     "checkver": "github",
     "autoupdate": {
