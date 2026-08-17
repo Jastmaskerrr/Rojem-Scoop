@@ -80,6 +80,7 @@ scoop install rojem/<manifest>
 | [Keep-Screen-WIN](https://github.com/Kindness-Kismet/Keep-Screen-WIN) | keep-screen                  | 一个极简的保持 Windows 屏幕常亮的小工具                      | 🈚️       |
 | [Keymap](https://github.com/cataerogong/keymap)             | keymap                       | 快捷键可视化与记录工具，支持托盘全局热键唤起                 | ✔       |
 | [KeywordGacha](https://github.com/neavo/KeywordGacha)        | keywordgacha                 | 使用 AI 能力一键分析 小说、游戏、字幕 等文本内容并生成术语表的次世代翻译辅助工具 | ✔       |
+| [Kindle Mate 2](https://github.com/lzcapp/KindleMate2)       | kindlemate2                  | Kindle 标注、笔记与生词本管理工具                                         | ✔       |
 | [LinguaGacha](https://github.com/neavo/LinguaGacha)          | linguagacha                  | 使用 AI 能力一键翻译 小说、游戏、字幕 等文本内容的次世代文本翻译器 | ✔       |
 | [locale-remulator](https://github.com/InWILL/Locale_Remulator) | locale-remulator             | 系统区域和语言模拟器                                         | ✔       |
 | [Memospot](https://github.com/memospot/memospot)             | memospot                     | [Memos](https://usememos.com/) 的独立桌面版本，可本地运行Memos，也可以连接到远程 Memos 服务器 | ❌       |
