@@ -83,6 +83,7 @@ scoop install rojem/<manifest>
 | [Kindle Mate 2](https://github.com/lzcapp/KindleMate2)       | kindlemate2                  | Kindle 标注、笔记与生词本管理工具                                         | ✔       |
 | [KoShelf](https://github.com/paviro/KoShelf)                 | koshelf                      | 基于 KOReader 元数据的个人书架、标注与阅读统计 Web 仪表盘                         | 🈚️     |
 | [KToolBox](https://github.com/Ljzd-PRO/KToolBox)             | ktoolbox                     | 高度可自定义的 Kemono / Coomer 命令行下载工具                              | ✔       |
+| [Legacinator](https://github.com/nefarius/Legacinator)       | legacinator                  | 扫描并清理遗留/过期的游戏控制器与虚拟驱动程序（ScpToolkit、ViGEmBus 等）               | 🈚️     |
 | [LinguaGacha](https://github.com/neavo/LinguaGacha)          | linguagacha                  | 使用 AI 能力一键翻译 小说、游戏、字幕 等文本内容的次世代文本翻译器 | ✔       |
 | [locale-remulator](https://github.com/InWILL/Locale_Remulator) | locale-remulator             | 系统区域和语言模拟器                                         | ✔       |
 | [Memospot](https://github.com/memospot/memospot)             | memospot                     | [Memos](https://usememos.com/) 的独立桌面版本，可本地运行Memos，也可以连接到远程 Memos 服务器 | ❌       |
