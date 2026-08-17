@@ -1,0 +1,45 @@
+{
+    "version": "0.24.0",
+    "description": "A powerful CLI downloader for Kemono and Coomer with high customizability.",
+    "homepage": "https://github.com/Ljzd-PRO/KToolBox",
+    "license": "BSD-3-Clause",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/Ljzd-PRO/KToolBox/releases/download/v0.24.0/ktoolbox-Windows-x64-v0.24.0.zip",
+            "hash": "90741c573ed1e56aff4a11961e8c0914e3082eac40aafadd83cc8e3640c2e4cc",
+            "extract_dir": "ktoolbox-Windows-x64"
+        },
+        "32bit": {
+            "url": "https://github.com/Ljzd-PRO/KToolBox/releases/download/v0.24.0/ktoolbox-Windows-x86-v0.24.0.zip",
+            "hash": "967c34ae17ec31c6e9a7da55db48c1da220953f28ae837f0ad4e81c581a32a40",
+            "extract_dir": "ktoolbox-Windows-x86"
+        }
+    },
+    "bin": "ktoolbox.exe",
+    "shortcuts": [
+        [
+            "ktoolbox.exe",
+            "KToolBox"
+        ]
+    ],
+    "pre_install": [
+        "if (!(Test-Path \"$persist_dir\\.env\")) {",
+        "    if (!(Test-Path \"$persist_dir\")) { New-Item \"$persist_dir\" -ItemType Directory -Force | Out-Null }",
+        "    Copy-Item \"$dir\\example.env\" \"$persist_dir\\.env\" -Force",
+        "}"
+    ],
+    "persist": ".env",
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/Ljzd-PRO/KToolBox/releases/download/v$version/ktoolbox-Windows-x64-v$version.zip",
+                "extract_dir": "ktoolbox-Windows-x64"
+            },
+            "32bit": {
+                "url": "https://github.com/Ljzd-PRO/KToolBox/releases/download/v$version/ktoolbox-Windows-x86-v$version.zip",
+                "extract_dir": "ktoolbox-Windows-x86"
+            }
+        }
+    }
+}
