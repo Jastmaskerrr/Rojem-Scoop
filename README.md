@@ -8,6 +8,9 @@
     <a href="https://github.com/Myraxion/Rojem-Scoop">
         <img src="https://img.shields.io/github/stars/Myraxion/Rojem-Scoop" alt="github stars" />
     </a>
+    <a href="https://github.com/Myraxion/Rojem-Scoop/tree/main/bucket">
+        <img src="https://img.shields.io/github/directory-file-count/Myraxion/Rojem-Scoop/bucket?label=apps" alt="apps count" />
+    </a>
     <a href="https://github.com/Myraxion/Rojem-Scoop">
         <img src="https://img.shields.io/github/created-at/Myraxion/Rojem-Scoop" alt="created" />
     </a>
@@ -27,7 +30,7 @@ scoop bucket add rojem https://github.com/Myraxion/Rojem-Scoop
 scoop install rojem/<manifest>
 ```
 
-## 应用列表
+## 应用列表 [![apps](https://img.shields.io/github/directory-file-count/Myraxion/Rojem-Scoop/bucket?label=%E6%94%B6%E5%BD%95%E6%95%B0%E9%87%8F)](https://github.com/Myraxion/Rojem-Scoop/tree/main/bucket)
 
 | APP                                                          | Manifest                     | Description                                                  | Persist |
 | ------------------------------------------------------------ | ---------------------------- | ------------------------------------------------------------ | ------- |
