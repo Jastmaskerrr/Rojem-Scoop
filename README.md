@@ -111,6 +111,8 @@ scoop install rojem/<manifest>
 | [Send Windows Key](https://www.sordum.org/12894/)            | send-windows-key             | 通过命令行发送Windows按键                                    | 🈚️       |
 | [Skills Manager](https://github.com/xingkongliang/skills-manager) | skills-manager               | AI Agent 技能（Skills）跨工具管理与同步工具                   | ❌       |
 | [Skip UAC Prompt](https://www.sordum.org/16219/)             | skip-uac-prompt              | 为选定的应用程序启用或禁用 UAC，而无需完全禁用系统范围内的 UAC | ✔       |
+| [SoftCnKiller](https://blog.csdn.net/hfhbutn/article/details/104799162) | softcnkiller                 | 专针对国产流氓、捆绑等恶意软件的扫描、清除工具                                      | ✔       |
+| [Steam Account Switcher](https://github.com/danielchalmers/SteamAccountSwitcher) | steam-account-switcher       | 从系统托盘快速切换多个 Steam 账号                                         | ❌       |
 | [Stelliberty](https://github.com/Kindness-Kismet/Stellibert) | stelliberty                  | 现代化 [Mihomo](https://github.com/MetaCubeX/mihomo) 客户端  | ✔       |
 | [Traynard](https://github.com/tabris17/traynard)             | traynard                     | 将任意应用窗口最小化到系统托盘                               | ✔       |
 | [Tremotesf 2](https://github.com/equeim/tremotesf2)          | tremotesf                    | Bittorrent 客户端 [Transmission](https://transmissionbt.com/) 的GUI | ❌       |
