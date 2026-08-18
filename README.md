@@ -102,6 +102,7 @@ scoop install rojem/<manifest>
 | [PopDrop](https://github.com/hiforrest/PopDrop)              | popdrop                      | 按快捷键呼出置顶文件面板，集中查看、打开和拖放多个目录中的最新文件                            | ✔       |
 | [PotatoNV](https://github.com/kitsuned/PotatoNV)             | potatonv                     | 用于解锁搭载麒麟处理器的华为设备 Bootloader 的工具                              | 🈚️     |
 | [PowerRun](https://www.sordum.org/9416/)                     | powerrun                     | TrustedInstaller/NT Authority/系统相同的权限运行 regedit.exe、Cmd.exe 或其他软件 | ✔       |
+| [Prowlarr](https://prowlarr.com)                             | prowlarr                     | Usenet 和 BitTorrent 索引器管理工具，可与各类 PVR 应用无缝集成                  | ❌       |
 | [pyTranscriber](https://pytranscriber.github.io/)            | pytranscriber                | 通过友好的图形用户界面，为音频/视频文件自动生成转录/字幕     | ❌       |
 | [rScoop](https://github.com/AmarBego/Rscoop)                 | rscoop                       | A modern, efficient desktop GUI for Scoop, search, install, update and manage Windows packages without touching the terminal. | 🈚️       |
 | [scoop-search-multisource](https://github.com/plicit/scoop-search-multisource) | scoop-search-multisource     | 默认情况下搜索本地Scoop活动存储桶和远程 Rasa HTML scoop目录  | ❌       |
