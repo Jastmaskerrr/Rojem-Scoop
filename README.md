@@ -106,6 +106,7 @@ scoop install rojem/<manifest>
 | [pyTranscriber](https://pytranscriber.github.io/)            | pytranscriber                | 通过友好的图形用户界面，为音频/视频文件自动生成转录/字幕     | ❌       |
 | [Reader](https://github.com/binbyu/Reader)                   | reader                       | 小巧开源的 Win32 本地与在线小说/电子书阅读器                                   | ✔       |
 | [rScoop](https://github.com/AmarBego/Rscoop)                 | rscoop                       | A modern, efficient desktop GUI for Scoop, search, install, update and manage Windows packages without touching the terminal. | 🈚️       |
+| [RustyStar](https://github.com/RustyStarX/RustyStar)         | rustystar                    | 基于 Rust 编写的 EnergyStar 替代品，利用 Windows 11 EcoQoS 特性优化后台能耗     | ❌       |
 | [scoop-search-multisource](https://github.com/plicit/scoop-search-multisource) | scoop-search-multisource     | 默认情况下搜索本地Scoop活动存储桶和远程 Rasa HTML scoop目录  | ❌       |
 | [Send Windows Key](https://www.sordum.org/12894/)            | send-windows-key             | 通过命令行发送Windows按键                                    | 🈚️       |
 | [Skills Manager](https://github.com/xingkongliang/skills-manager) | skills-manager               | AI Agent 技能（Skills）跨工具管理与同步工具                   | ❌       |
