@@ -88,6 +88,7 @@ scoop install rojem/<manifest>
 | [locale-remulator](https://github.com/InWILL/Locale_Remulator) | locale-remulator             | 系统区域和语言模拟器                                         | ✔       |
 | [LottieViewConvert](https://github.com/SwaggyMacro/LottieViewConvert) | lottieviewconvert            | Telegram 贴纸、Discord 贴纸与 Lottie 动画查看与格式转换工具                   | ❌       |
 | [Manga Manager](https://github.com/MangaManagerORG/Manga-Manager) | manga-manager                | 漫画与漫画库一站式管理工具，支持元数据刮削与封面编辑                                   | ❌       |
+| [Max Auto Clicker](https://maxautoclicker.blogspot.com)      | maxautoclicker               | 极速且易于使用的鼠标自动点击器                                              | ❌       |
 | [Memospot](https://github.com/memospot/memospot)             | memospot                     | [Memos](https://usememos.com/) 的独立桌面版本，可本地运行Memos，也可以连接到远程 Memos 服务器 | ❌       |
 | [MoonLight 基地版](https://github.com/qiin2333/moonlight-qt) | moonlight-foundation         | 基地版[moonlight](https://github.com/moonlight-stream/moonlight-qt)客户端，支持[官方版Sunshine](https://docs.lizardbyte.dev/projects/sunshine/latest/index.html)和[基地版Sunshine](https://sunshine-foundation.vercel.app/) | ✔       |
 | [mouse jiggler](https://github.com/arkane-systems/mousejiggler) | mouse-jiggler                | “模拟”鼠标输入来回抖动                                       | 🈚️       |
