@@ -71,6 +71,7 @@ scoop install rojem/<manifest>
 | [fuck-xxxmoe](https://github.com/chenaive/fuck-xxxmoe)       | fuck-xxxmoe                  | 提取 xxx.moe 系漫画网站 EPUB 文件中的图片，并按实际阅读顺序排序 | 🈚️       |
 | [GPUSwitch](https://github.com/JasonHu051219/GPUSwitch)      | gpuswitch                    | GPUSwitch (GPUS) - Windows 显卡切换程序。是一款为 Windows 10/11 用户设计的轻量级显卡首选项管理工具。通过“进程监听 + 动态重启”的技术方案，解决了双显卡笔记本电脑显卡切换繁琐的痛点。 | 🈚️       |
 | [GoogleTranslate_IPFinder](https://github.com/GoodCoder666/GoogleTranslate_IPFinder) | google-translate-ipfinder    | 谷歌翻译 API 服务器的 IP 扫描、测速工具                      | ❌       |
+| [HideTaskbar](https://github.com/sinjs/HideTaskbar)          | hidetaskbar                  | 极简的 Windows 任务栏完全隐藏工具                                        | 🈚️     |
 | [HustWebAuth](https://github.com/a76yyyy/HustWebAuth)        | hustwebauth                  | 锐捷校园网 Web 认证命令行工具                                | 🈚️       |
 | [Iceweasel](https://sourceforge.net/projects/libportable/)   | iceweasel                    | 便携版Firefox                                                | ✔       |
 | [Imagine](https://www.nyam.pe.kr/dev/imagine/)               | imagine                      | 快速、紧凑的图像和动画查看器。可以作为独立应用程序使用，也可以作为 [Total Commander](https://www.ghisler.com/) 的 Lister 插件集成 | ✔       |
