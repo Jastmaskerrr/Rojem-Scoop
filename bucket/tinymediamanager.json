@@ -6,15 +6,13 @@
         "identifier": "Apache-2.0",
         "url": "https://github.com/tinyMediaManager/tinyMediaManager/blob/master/LICENSE"
     },
-    "suggest": {
-        "JRE": "java/openjdk"
-    },
     "architecture": {
         "64bit": {
             "url": "https://release.tinymediamanager.org/v5/dist/tinyMediaManager-5.3.1-windows-amd64.zip",
             "hash": "6df119953a614bcd0a4aa7f92112861c4eb4f71a696f82ddafbb673da97fb8e5"
         }
     },
+    "extract_dir": "tinyMediaManager",
     "bin": "tinyMediaManagerCMD.exe",
     "shortcuts": [
         [
@@ -40,6 +38,7 @@
                     "url": "$url.sha256"
                 }
             }
-        }
+        },
+        "extract_dir": "tinyMediaManager"
     }
 }
