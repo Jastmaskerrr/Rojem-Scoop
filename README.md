@@ -114,6 +114,7 @@ scoop install rojem/<manifest>
 | [SoftCnKiller](https://blog.csdn.net/hfhbutn/article/details/104799162) | softcnkiller                 | 专针对国产流氓、捆绑等恶意软件的扫描、清除工具                                      | ✔       |
 | [Steam Account Switcher](https://github.com/danielchalmers/SteamAccountSwitcher) | steam-account-switcher       | 从系统托盘快速切换多个 Steam 账号                                         | ❌       |
 | [Stelliberty](https://github.com/Kindness-Kismet/Stellibert) | stelliberty                  | 现代化 [Mihomo](https://github.com/MetaCubeX/mihomo) 客户端  | ✔       |
+| [SuperMemo Toolkit](https://github.com/Zacharia2/SuperMemo-Toolkit) | supermemo-toolkit            | SuperMemo 增强工具箱（CLI/GUI），支持 EPUB 转换、Latex 渲染、sm2anki 及 AutoTTS | ❌       |
 | [Traynard](https://github.com/tabris17/traynard)             | traynard                     | 将任意应用窗口最小化到系统托盘                               | ✔       |
 | [Tremotesf 2](https://github.com/equeim/tremotesf2)          | tremotesf                    | Bittorrent 客户端 [Transmission](https://transmissionbt.com/) 的GUI | ❌       |
 | [uLister](https://github.com/evgen0xb/uLister)               | ulister                      | Total Commander Lister plugin,uLister is a powerful document viewer which can open more than 500 file formats. | 🈚️       |
