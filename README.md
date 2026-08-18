@@ -118,6 +118,7 @@ scoop install rojem/<manifest>
 | [SuperMemo Toolkit](https://github.com/Zacharia2/SuperMemo-Toolkit) | supermemo-toolkit            | SuperMemo 增强工具箱（CLI/GUI），支持 EPUB 转换、Latex 渲染、sm2anki 及 AutoTTS | ❌       |
 | [Switcheroo](https://github.com/coezbek/switcheroo)          | switcheroo                   | Windows 窗口切换器，通过快速键入过滤替代 Alt+Tab                             | ✔       |
 | [tinyMediaManager](https://www.tinymediamanager.org/)        | tinymediamanager             | 多功能媒体管理工具，支持为 Kodi、Plex、Emby 等刮削和整理影视元数据                     | ✔       |
+| [tmd](https://github.com/unkmonster/tmd)                     | tmd                          | Twitter/X 媒体资源下载命令行工具，支持通过用户时间线和列表批量下载                       | ❌       |
 | [Traynard](https://github.com/tabris17/traynard)             | traynard                     | 将任意应用窗口最小化到系统托盘                               | ✔       |
 | [Tremotesf 2](https://github.com/equeim/tremotesf2)          | tremotesf                    | Bittorrent 客户端 [Transmission](https://transmissionbt.com/) 的GUI | ❌       |
 | [uLister](https://github.com/evgen0xb/uLister)               | ulister                      | Total Commander Lister plugin,uLister is a powerful document viewer which can open more than 500 file formats. | 🈚️       |
