@@ -121,6 +121,7 @@ scoop install rojem/<manifest>
 | [tmd](https://github.com/unkmonster/tmd)                     | tmd                          | Twitter/X 媒体资源下载命令行工具，支持通过用户时间线和列表批量下载                       | ❌       |
 | [Traynard](https://github.com/tabris17/traynard)             | traynard                     | 将任意应用窗口最小化到系统托盘                               | ✔       |
 | [Tree (GnuWin32)](https://sourceforge.net/projects/gnuwin32/) | tree                         | 以树状缩进格式递归列出目录及文件结构的命令行工具                                     | 🈚️     |
+| [tree++](https://github.com/Water-Run/treepp)                | treepp                       | Rust 编写的增强版 Windows tree 目录树查看工具                             | 🈚️     |
 | [Tremotesf 2](https://github.com/equeim/tremotesf2)          | tremotesf                    | Bittorrent 客户端 [Transmission](https://transmissionbt.com/) 的GUI | ❌       |
 | [uLister](https://github.com/evgen0xb/uLister)               | ulister                      | Total Commander Lister plugin,uLister is a powerful document viewer which can open more than 500 file formats. | 🈚️       |
 | [WhoShitsonMyC](https://github.com/Kami958/WhoShitsonMyC)     | whoshitsonmyc                | 磁盘空间变化对比轻量小工具                                   | ❌       |
