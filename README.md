@@ -100,6 +100,7 @@ scoop install rojem/<manifest>
 | [PixaiTaggerOnnxGui](https://github.com/wai55555/PixaiTaggerOnnxGui) | pixai-tagger-onnx-gui        | 基于 Pixai Tagger ONNX 的本地图像自动打 Danbooru 标签 GUI 工具 | ✔       |
 | [Pomotroid](https://github.com/splode/pomotroid)             | pomotroid                    | 简单易用的番茄钟计时器                                       | ❌       |
 | [PopDrop](https://github.com/hiforrest/PopDrop)              | popdrop                      | 按快捷键呼出置顶文件面板，集中查看、打开和拖放多个目录中的最新文件                            | ✔       |
+| [PotatoNV](https://github.com/kitsuned/PotatoNV)             | potatonv                     | 用于解锁搭载麒麟处理器的华为设备 Bootloader 的工具                              | 🈚️     |
 | [PowerRun](https://www.sordum.org/9416/)                     | powerrun                     | TrustedInstaller/NT Authority/系统相同的权限运行 regedit.exe、Cmd.exe 或其他软件 | ✔       |
 | [pyTranscriber](https://pytranscriber.github.io/)            | pytranscriber                | 通过友好的图形用户界面，为音频/视频文件自动生成转录/字幕     | ❌       |
 | [rScoop](https://github.com/AmarBego/Rscoop)                 | rscoop                       | A modern, efficient desktop GUI for Scoop, search, install, update and manage Windows packages without touching the terminal. | 🈚️       |
