@@ -106,6 +106,8 @@ scoop install rojem/<manifest>
 | [Prowlarr](https://prowlarr.com)                             | prowlarr                     | Usenet 和 BitTorrent 索引器管理工具，可与各类 PVR 应用无缝集成                  | ❌       |
 | [pyTranscriber](https://pytranscriber.github.io/)            | pytranscriber                | 通过友好的图形用户界面，为音频/视频文件自动生成转录/字幕     | ❌       |
 | [Reader](https://github.com/binbyu/Reader)                   | reader                       | 小巧开源的 Win32 本地与在线小说/电子书阅读器                                   | ✔       |
+| [Rime Wanxiang Update Tools (PowerShell)](https://github.com/rimeinn/rime-wanxiang-update-tools) | rime-wanxiang-update-ps1     | Rime 输入法万象方案、词库、模型自动更新脚本                                     | 🈚️     |
+| [Rime Wanxiang Update Tools (Python)](https://github.com/rimeinn/rime-wanxiang-update-tools) | rime-wanxiang-update-py      | Rime 输入法万象方案、词库、模型自动更新 Python 脚本                             | ✔       |
 | [rScoop](https://github.com/AmarBego/Rscoop)                 | rscoop                       | A modern, efficient desktop GUI for Scoop, search, install, update and manage Windows packages without touching the terminal. | 🈚️       |
 | [RustyStar](https://github.com/RustyStarX/RustyStar)         | rustystar                    | 基于 Rust 编写的 EnergyStar 替代品，利用 Windows 11 EcoQoS 特性优化后台能耗     | ❌       |
 | [scoop-search-multisource](https://github.com/plicit/scoop-search-multisource) | scoop-search-multisource     | 默认情况下搜索本地Scoop活动存储桶和远程 Rasa HTML scoop目录  | ❌       |
