@@ -57,6 +57,7 @@ scoop install rojem/<manifest>
 | [ComicGUISpider](https://cgs.101114105.xyz)                  | comicguispider               | 跨平台漫画/本子下载 GUI，支持拷贝漫画、Māngabz、漫画柜、动漫屋、禁漫天堂、wnacg、exhentai、nhentai、hitomi.la、kemono、danbooru 等众多站点 | ❌       |
 | [Context Menu Manager](https://github.com/Jack251970/ContextMenuManager) | context-menu-manager         | 一个管理 Windows 右键上下文菜单的程序                        | ✔       |
 | [CudaLister](https://github.com/Alexey-T/CudaLister/)        | cudalister                   | 基于 ATSynEdit 的 Total Commander Lister 插件                | 🈚️       |
+| [DepotDownloader](https://github.com/SteamRE/DepotDownloader) | depotdownloader              | 基于 SteamKit2 库的 Steam 游戏/仓库数据包命令行下载工具                        | ❌       |
 | [Digital Clock](https://sourceforge.net/projects/digitalclock4/) | digital-clock-5              | 一款美观的可定制时钟，支持插件功能                           | ✔       |
 | [Discord](https://portapps.io/app/discord-portable/)         | discord                      | 便携版Discord客户端，并持久化[BetterDiscord](https://mwittrien.github.io/)插件 | ✔       |
 | [echotrace](https://github.com/ycccccccy/echotrace)          | echotrace                    | 一个本地、安全的[微信](https://weixin.qq.com/)聊天记录导出、分析与年度报告生成工具 | ✔       |
