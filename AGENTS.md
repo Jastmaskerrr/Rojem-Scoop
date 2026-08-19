@@ -35,7 +35,7 @@
 - 提交信息 MUST 遵循 [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
   - 格式：`<type>(<scope>): <description>`，`<description>` 使用中文
   - 示例：`feat: 添加 chrome-plus 清单`
-- 分支策略：直接在 `master` 主分支进行开发、提交与维护，无需额外创建特性分支
+- 分支策略：直接在 `master` 主分支进行开发、提交与维护
 
 ### 命名规则
 
