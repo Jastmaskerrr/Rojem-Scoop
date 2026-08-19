@@ -3,7 +3,7 @@
     "description": "Minecraft 启动器：Plain Craft Launcher。超快的下载速度，下载安装 Mod 和整合包，简洁且高度自定义的界面，流畅精细的动画……总之很棒就完事啦！",
     "homepage": "https://github.com/Hex-Dragon/PCL2",
     "license": "https://github.com/Hex-Dragon/PCL2/blob/main/LICENCE",
-    "url": "https://raw.githubusercontent.com/Hex-Dragon/PCL2/main/最新正式版.zip",
+    "url": "https://raw.githubusercontent.com/Hex-Dragon/PCL2/main/%E6%9C%80%E6%96%B0%E6%AD%A3%E5%BC%8F%E7%89%88.zip",
     "hash": "5321f0754137fbdd2c5c1420db868b8e516bcd5d4ed94729d00813f1597c4b46",
     "shortcuts": [
         [
@@ -54,11 +54,11 @@
         ]
     },
     "checkver": {
-        "url": "https://api.github.com/repos/Hex-Dragon/PCL2/commits?path=最新正式版.zip&per_page=1",
+        "url": "https://api.github.com/repos/Hex-Dragon/PCL2/commits?path=%E6%9C%80%E6%96%B0%E6%AD%A3%E5%BC%8F%E7%89%88.zip&per_page=1",
         "jsonpath": "$.[0].commit.message",
         "regex": "([\\d.]+)"
     },
     "autoupdate": {
-        "url": "https://raw.githubusercontent.com/Hex-Dragon/PCL2/main/最新正式版.zip"
+        "url": "https://raw.githubusercontent.com/Hex-Dragon/PCL2/main/%E6%9C%80%E6%96%B0%E6%AD%A3%E5%BC%8F%E7%89%88.zip"
     }
 }
