@@ -35,8 +35,7 @@
 - 提交信息 MUST 遵循 [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
   - 格式：`<type>(<scope>): <description>`，`<description>` 使用中文
   - 示例：`feat: 添加 chrome-plus 清单`
-- 分支命名 MUST 遵循 [Conventional Branch](https://conventional-branch.github.io)
-  - 格式：`<type>/<description>`（type 用缩写：feat, fix）
+- 分支策略：直接在 `master` 主分支进行开发、提交与维护，无需额外创建特性分支
 
 ### 命名规则
 
@@ -77,7 +76,7 @@
 
 ### 修改代码前
 
-1. 确认工作分支基于最新远程主分支，且不在已关闭 PR 的废弃分支上工作
+1. 确认本地 `master` 分支与远程 `origin/master` 保持同步（必要时执行 `git pull --rebase`）
 2. 阅读任务涉及的清单文件和相关脚本
 3. 分析安装包文件结构并结合开源项目源码的轻量静态检索（如 `APPDATA`、`SpecialFolder`、`BaseDirectory` 等路径读写逻辑），确认 `persist` 目标及 `Persist` 状态；若为动态生成文件，提前规划 `pre_install` 建立空文件逻辑
 4. 预先校验 `checkver` 配置，确保能准确匹配并提取到最新版本号
