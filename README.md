@@ -100,6 +100,8 @@ scoop install rojem/<manifest>
 | [OpenLogi](https://github.com/AprilNEA/OpenLogi)             | openlogi                     | 基于 Rust 的原生本地罗技 (Logitech Options+) 替代工具，支持 HID++ 按键重映射、DPI 与 SmartShift 设置 | 🈚️       |
 | [pdfannots2json](https://github.com/mgmeyers/pdfannots2json) | pdfannots2json               | 从 PDF 文件中提取注释并输出为 JSON 格式                                    | 🈚️     |
 | [PixaiTaggerOnnxGui](https://github.com/wai55555/PixaiTaggerOnnxGui) | pixai-tagger-onnx-gui        | 基于 Pixai Tagger ONNX 的本地图像自动打 Danbooru 标签 GUI 工具 | ✔       |
+| [Plain Craft Launcher 2](https://github.com/Hex-Dragon/PCL2) | pcl2                         | Minecraft 启动器：超快下载速度，支持 Mod/整合包安装与高度自定义界面                    | ✔       |
+| [Plain Craft Launcher 2 (Community Edition)](https://pcl-community.github.io/PCL2-CE-Web/) | pcl2-ce                      | Minecraft 启动器：由社区强力驱动的 PCL 二次开发版                             | ✔       |
 | [Pomotroid](https://github.com/splode/pomotroid)             | pomotroid                    | 简单易用的番茄钟计时器                                       | ❌       |
 | [PopDrop](https://github.com/hiforrest/PopDrop)              | popdrop                      | 按快捷键呼出置顶文件面板，集中查看、打开和拖放多个目录中的最新文件                            | ✔       |
 | [PotatoNV](https://github.com/kitsuned/PotatoNV)             | potatonv                     | 用于解锁搭载麒麟处理器的华为设备 Bootloader 的工具                              | 🈚️     |
