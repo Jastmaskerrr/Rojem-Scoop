@@ -130,6 +130,7 @@ scoop install rojem/<manifest>
 | [Wanxiang Tools](https://github.com/amzxyz/RIME-LMDG)        | wanxiang-tools               | 万象词库、刷拼音、辅助码与方案在线更新 GUI 桌面端工具                                | ❌       |
 | [WhoShitsonMyC](https://github.com/Kami958/WhoShitsonMyC)     | whoshitsonmyc                | 磁盘空间变化对比轻量小工具                                   | ❌       |
 | [Win11Debloat](https://github.com/Raphire/Win11Debloat)      | win11debloat                 | 轻量易用的 Windows 10/11 预装软件卸载、遥测禁用与系统深度精简优化工具                   | ✔       |
+| [wsw](https://github.com/ferama/wsw)                         | wsw                          | 小巧实用的 Windows 服务包装工具，可将任意可执行程序注册为系统服务                        | ❌       |
 | [wx_key](https://github.com/ycccccccy/wx_key/)               | wx-key                       | 获取[微信](https://weixin.qq.com/)4.0版本以上数据库密钥和图片密钥的工具 | ✔       |
 | [XiaoYao_QuickJump](https://github.com/lch319/XiaoYao_QuickJump) | xiaoyao-quickjump            | 在打开或保存对话框中，快速跳转到当前 资源管理器/TC/DO/XY/Q-Dir中打开的文件夹路径 | ✔       |
 
