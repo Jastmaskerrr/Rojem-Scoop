@@ -83,6 +83,7 @@ scoop install rojem/<manifest>
 | [Keymap](https://github.com/cataerogong/keymap)             | keymap                       | 快捷键可视化与记录工具，支持托盘全局热键唤起                 | ✔       |
 | [KeywordGacha](https://github.com/neavo/KeywordGacha)        | keywordgacha                 | 使用 AI 能力一键分析 小说、游戏、字幕 等文本内容并生成术语表的次世代翻译辅助工具 | ✔       |
 | [Kindle Mate 2](https://github.com/lzcapp/KindleMate2)       | kindlemate2                  | Kindle 标注、笔记与生词本管理工具                                         | ✔       |
+| [KnotLinkService](https://github.com/KnotLink-Protocol/KnotLinkService) | knotlinkservice              | 基于 Qt5 的本地 TCP 消息路由服务                                        | 🈚️     |
 | [KoShelf](https://github.com/paviro/KoShelf)                 | koshelf                      | 基于 KOReader 元数据的个人书架、标注与阅读统计 Web 仪表盘                         | 🈚️     |
 | [KToolBox](https://github.com/Ljzd-PRO/KToolBox)             | ktoolbox                     | 高度可自定义的 Kemono / Coomer 命令行下载工具                              | ✔       |
 | [Legacinator](https://github.com/nefarius/Legacinator)       | legacinator                  | 扫描并清理遗留/过期的游戏控制器与虚拟驱动程序（ScpToolkit、ViGEmBus 等）               | 🈚️     |
