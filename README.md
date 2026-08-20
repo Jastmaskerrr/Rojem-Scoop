@@ -93,7 +93,7 @@ scoop install rojem/<manifest>
 | [Manga Manager](https://github.com/MangaManagerORG/Manga-Manager) | manga-manager                | 漫画与漫画库一站式管理工具，支持元数据刮削与封面编辑                                   | ❌       |
 | [Max Auto Clicker](https://maxautoclicker.blogspot.com)      | maxautoclicker               | 极速且易于使用的鼠标自动点击器                                              | ❌       |
 | [Memospot](https://github.com/memospot/memospot)             | memospot                     | [Memos](https://usememos.com/) 的独立桌面版本，可本地运行Memos，也可以连接到远程 Memos 服务器 | ❌       |
-| [MineBackup](https://github.com/Leafuke/MineBackup)          | minebackup                   | Minecraft 地图存档备份与恢复 GUI 工具                                   | ✔       |
+| [MineBackup](https://github.com/Leafuke/MineBackup)          | minebackup                   | Minecraft 地图存档备份与恢复 GUI 工具                                   | ❌       |
 | [MoonLight 基地版](https://github.com/qiin2333/moonlight-qt) | moonlight-foundation         | 基地版[moonlight](https://github.com/moonlight-stream/moonlight-qt)客户端，支持[官方版Sunshine](https://docs.lizardbyte.dev/projects/sunshine/latest/index.html)和[基地版Sunshine](https://sunshine-foundation.vercel.app/) | ✔       |
 | [mouse jiggler](https://github.com/arkane-systems/mousejiggler) | mouse-jiggler                | “模拟”鼠标输入来回抖动                                       | 🈚️       |
 | [Neokikoeru](https://github.com/vscodev/neokikoeru)          | neokikoeru                   | 基于云存储的 DLsite 音声作品管理和媒体播放软件               | ❌       |
