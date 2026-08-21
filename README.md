@@ -42,6 +42,7 @@ scoop install rojem/<manifest>
 | [AutoHotkey_H](https://github.com/thqby/AutoHotkey_H)        | autohotkey-h                 | 一个具有多线程等附加功能的[AHK V2](https://www.autohotkey.com/v2/)分支 | 🈚️       |
 | [AutoHotkey v1](https://www.autohotkey.com)                  | autohotkey1                  | [AHK v1](https://www.autohotkey.com/download/1.1/)版，与`main`中的AHK共存 | 🈚️       |
 | [AvPlay](https://github.com/anonymousjav/AvPlayRelease)     | avplay                       | 一款美观优雅的跨平台JAV播放器                               | ❌       |
+| [Azul Zulu 25](https://www.azul.com/products/zulu-community/) | zulu25-jdk                   | Azul 官方认证的 OpenJDK 25 构建版本（已移除环境变量与 PATH 设置，避免影响系统全局环境）      | 🈚️     |
 | [BilibiliHistoryFetcher](https://github.com/LifeArchiveProject/BilibiliHistoryFetcher) | bilibili-history-fetcher     | 获取b站历史记录，一键下载用户所有的视频，动态，收藏夹，找回14天内b站在屏幕上显示过的图片，生成详细的年度总结，自动化任务 | ✔       |
 | [BiliHistoryFrontend](https://github.com/LifeArchiveProject/BiliHistoryFrontend) | bilibili-history-frontend    | 基于 Vue 3 开发的 B 站历史记录分析工具的前端项目，为用户提供丰富的 B 站观看历史数据分析功能。 | ❌       |
 | [BingWallpaper](https://github.com/jadepeng/bing-wallpaper)  | bing-wallpaper               | Bing每日壁纸，自动获取Bing的精美图片设置为壁纸，并且支持随机切换历史壁纸，查看壁纸故事 | ✔       |
